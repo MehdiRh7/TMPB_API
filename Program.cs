@@ -182,6 +182,29 @@ var jwtOptions =
         .Get<JwtOptions>()
     ?? new JwtOptions();
 
+if (builder.Environment.IsProduction())
+{
+    // Placeholder values shipped as defaults/examples in source - never acceptable as the real
+    // production signing key. A production host must not start with a missing, placeholder, or
+    // too-short key - that would let anyone forge a valid access token.
+    var insecureJwtSigningKeys = new HashSet<string>(StringComparer.Ordinal)
+    {
+        "",
+        "change-me-to-a-strong-production-secret-at-least-32-characters",
+        "replace-this-development-secret-with-a-production-secret-32chars",
+    };
+
+    if (string.IsNullOrWhiteSpace(jwtOptions.SigningKey)
+        || insecureJwtSigningKeys.Contains(jwtOptions.SigningKey)
+        || jwtOptions.SigningKey.Length < 32)
+    {
+        throw new InvalidOperationException(
+            "Jwt:SigningKey is missing, a development placeholder, or shorter than 32 characters. " +
+            "Set a real secret via the Jwt__SigningKey environment variable (or another production " +
+            "configuration source) before starting this service in a production environment.");
+    }
+}
+
 builder.Services
     .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
