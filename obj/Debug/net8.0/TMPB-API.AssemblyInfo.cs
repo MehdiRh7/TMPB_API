@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TMPB-API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b9c6a50a9477493d51132824469efd93e8129d5")]
 [assembly: System.Reflection.AssemblyProductAttribute("TMPB-API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TMPB-API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -8,13 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Chat.Api" Version="0.1.0" />
-    <PackageReference Include="Nexus.Integrations.TaskNotifications" Version="0.1.0" />
-    <PackageReference Include="Nexus.TaskManagement" Version="0.1.0" />
-    <PackageReference Include="Nexus.TaskManagement.Infrastructure" Version="0.1.0" />
-    <PackageReference Include="NexusCore.Infrastructure" Version="0.1.0" />
-    <PackageReference Include="Notifications.Api" Version="0.1.0" />
-    <PackageReference Include="Notifications.Infrastructure" Version="0.1.0" />
+    <PackageReference Include="Chat.Api" Version="0.1.0-20260929.2" />
+    <PackageReference Include="Nexus.Integrations.TaskNotifications" Version="0.1.0-20260929.2" />
+    <PackageReference Include="Nexus.TaskManagement" Version="0.1.0-20260929.2" />
+    <PackageReference Include="Nexus.TaskManagement.Infrastructure" Version="0.1.0-20260929.2" />
+    <PackageReference Include="NexusCore.Infrastructure" Version="0.1.0-20260929.2" />
+    <PackageReference Include="Notifications.Api" Version="0.1.0-20260929.2" />
+    <PackageReference Include="Notifications.Infrastructure" Version="0.1.0-20260929.2" />
     <PackageReference Include="Serilog" Version="4.4.0" />
     <PackageReference Include="Serilog.AspNetCore" Version="8.0.0" />
     <PackageReference Include="Serilog.Extensions.Hosting" Version="8.0.0" />

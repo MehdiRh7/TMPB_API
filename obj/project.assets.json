@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 3,
   "targets": {
     "net8.0": {
       "Azure.Core/1.38.0": {
@@ -60,11 +60,11 @@
           }
         }
       },
-      "Chat.Api/0.1.0": {
+      "Chat.Api/0.1.0-20260929.2": {
         "type": "package",
         "dependencies": {
-          "Chat.Application": "0.1.0",
-          "Chat.Infrastructure": "0.1.0",
+          "Chat.Application": "0.1.0-20260929.2",
+          "Chat.Infrastructure": "0.1.0-20260929.2",
           "Swashbuckle.AspNetCore": "6.6.2"
         },
         "compile": {
@@ -93,14 +93,14 @@
           }
         }
       },
-      "Chat.Application/0.1.0": {
+      "Chat.Application/0.1.0-20260929.2": {
         "type": "package",
         "dependencies": {
-          "Chat.Domain": "0.1.0",
+          "Chat.Domain": "0.1.0-20260929.2",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
           "Microsoft.EntityFrameworkCore": "8.0.24",
-          "NexusCore.Application": "0.1.0",
-          "NexusCore.SharedKernel": "0.1.0"
+          "NexusCore.Application": "0.1.0-20260929.2",
+          "NexusCore.SharedKernel": "0.1.0-20260929.2"
         },
         "compile": {
           "lib/net8.0/Chat.Application.dll": {}
@@ -109,10 +109,10 @@
           "lib/net8.0/Chat.Application.dll": {}
         }
       },
-      "Chat.Domain/0.1.0": {
+      "Chat.Domain/0.1.0-20260929.2": {
         "type": "package",
         "dependencies": {
-          "NexusCore.SharedKernel": "0.1.0"
+          "NexusCore.SharedKernel": "0.1.0-20260929.2"
         },
         "compile": {
           "lib/net8.0/Chat.Domain.dll": {}
@@ -121,10 +121,10 @@
           "lib/net8.0/Chat.Domain.dll": {}
         }
       },
-      "Chat.Infrastructure/0.1.0": {
+      "Chat.Infrastructure/0.1.0-20260929.2": {
         "type": "package",
         "dependencies": {
-          "Chat.Application": "0.1.0",
+          "Chat.Application": "0.1.0-20260929.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.24",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
@@ -820,11 +820,11 @@
           }
         }
       },
-      "Nexus.Integrations.TaskNotifications/0.1.0": {
+      "Nexus.Integrations.TaskNotifications/0.1.0-20260929.2": {
         "type": "package",
         "dependencies": {
-          "Nexus.TaskManagement": "0.1.0",
-          "Notifications.Application": "0.1.0"
+          "Nexus.TaskManagement": "0.1.0-20260929.2",
+          "Notifications.Application": "0.1.0-20260929.2"
         },
         "compile": {
           "lib/net8.0/Nexus.Integrations.TaskNotifications.dll": {}
@@ -833,12 +833,12 @@
           "lib/net8.0/Nexus.Integrations.TaskNotifications.dll": {}
         }
       },
-      "Nexus.TaskManagement/0.1.0": {
+      "Nexus.TaskManagement/0.1.0-20260929.2": {
         "type": "package",
         "dependencies": {
           "FluentValidation": "11.11.0",
-          "NexusCore.Application": "0.1.0",
-          "NexusCore.SharedKernel": "0.1.0"
+          "NexusCore.Application": "0.1.0-20260929.2",
+          "NexusCore.SharedKernel": "0.1.0-20260929.2"
         },
         "compile": {
           "lib/net8.0/Nexus.TaskManagement.dll": {}
@@ -850,12 +850,12 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Nexus.TaskManagement.Infrastructure/0.1.0": {
+      "Nexus.TaskManagement.Infrastructure/0.1.0-20260929.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.24",
-          "Nexus.TaskManagement": "0.1.0",
-          "NexusCore.Infrastructure": "0.1.0"
+          "Nexus.TaskManagement": "0.1.0-20260929.2",
+          "NexusCore.Infrastructure": "0.1.0-20260929.2"
         },
         "compile": {
           "lib/net8.0/Nexus.TaskManagement.Infrastructure.dll": {
@@ -868,15 +868,15 @@
           }
         }
       },
-      "NexusCore.Application/0.1.0": {
+      "NexusCore.Application/0.1.0-20260929.2": {
         "type": "package",
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.12",
           "Microsoft.EntityFrameworkCore": "8.0.24",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
-          "NexusCore.Domain": "0.1.0",
-          "NexusCore.SharedKernel": "0.1.0"
+          "NexusCore.Domain": "0.1.0-20260929.2",
+          "NexusCore.SharedKernel": "0.1.0-20260929.2"
         },
         "compile": {
           "lib/net8.0/NexusCore.Application.dll": {}
@@ -888,10 +888,10 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "NexusCore.Domain/0.1.0": {
+      "NexusCore.Domain/0.1.0-20260929.2": {
         "type": "package",
         "dependencies": {
-          "NexusCore.SharedKernel": "0.1.0"
+          "NexusCore.SharedKernel": "0.1.0-20260929.2"
         },
         "compile": {
           "lib/net8.0/NexusCore.Domain.dll": {}
@@ -900,15 +900,15 @@
           "lib/net8.0/NexusCore.Domain.dll": {}
         }
       },
-      "NexusCore.Infrastructure/0.1.0": {
+      "NexusCore.Infrastructure/0.1.0-20260929.2": {
         "type": "package",
         "dependencies": {
           "BCrypt.Net-Next": "4.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.24",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.24",
-          "NexusCore.Application": "0.1.0",
-          "NexusCore.Domain": "0.1.0",
-          "NexusCore.SharedKernel": "0.1.0",
+          "NexusCore.Application": "0.1.0-20260929.2",
+          "NexusCore.Domain": "0.1.0-20260929.2",
+          "NexusCore.SharedKernel": "0.1.0-20260929.2",
           "System.DirectoryServices.Protocols": "8.0.1"
         },
         "compile": {
@@ -922,7 +922,7 @@
           }
         }
       },
-      "NexusCore.SharedKernel/0.1.0": {
+      "NexusCore.SharedKernel/0.1.0-20260929.2": {
         "type": "package",
         "compile": {
           "lib/net8.0/NexusCore.SharedKernel.dll": {}
@@ -931,12 +931,12 @@
           "lib/net8.0/NexusCore.SharedKernel.dll": {}
         }
       },
-      "Notifications.Api/0.1.0": {
+      "Notifications.Api/0.1.0-20260929.2": {
         "type": "package",
         "dependencies": {
           "MediatR": "11.0.0",
-          "NexusCore.Application": "0.1.0",
-          "Notifications.Application": "0.1.0",
+          "NexusCore.Application": "0.1.0-20260929.2",
+          "Notifications.Application": "0.1.0-20260929.2",
           "Swashbuckle.AspNetCore": "6.6.2"
         },
         "compile": {
@@ -960,13 +960,13 @@
           }
         }
       },
-      "Notifications.Application/0.1.0": {
+      "Notifications.Application/0.1.0-20260929.2": {
         "type": "package",
         "dependencies": {
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
           "Microsoft.EntityFrameworkCore": "8.0.24",
-          "NexusCore.SharedKernel": "0.1.0",
-          "Notifications.Domain": "0.1.0"
+          "NexusCore.SharedKernel": "0.1.0-20260929.2",
+          "Notifications.Domain": "0.1.0-20260929.2"
         },
         "compile": {
           "lib/net8.0/Notifications.Application.dll": {}
@@ -975,10 +975,10 @@
           "lib/net8.0/Notifications.Application.dll": {}
         }
       },
-      "Notifications.Domain/0.1.0": {
+      "Notifications.Domain/0.1.0-20260929.2": {
         "type": "package",
         "dependencies": {
-          "NexusCore.SharedKernel": "0.1.0"
+          "NexusCore.SharedKernel": "0.1.0-20260929.2"
         },
         "compile": {
           "lib/net8.0/Notifications.Domain.dll": {}
@@ -987,14 +987,14 @@
           "lib/net8.0/Notifications.Domain.dll": {}
         }
       },
-      "Notifications.Infrastructure/0.1.0": {
+      "Notifications.Infrastructure/0.1.0-20260929.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.24",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.24",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
-          "Notifications.Application": "0.1.0",
-          "Notifications.Domain": "0.1.0"
+          "Notifications.Application": "0.1.0-20260929.2",
+          "Notifications.Domain": "0.1.0-20260929.2"
         },
         "compile": {
           "lib/net8.0/Notifications.Infrastructure.dll": {}
@@ -1728,13 +1728,13 @@
         "readme.md"
       ]
     },
-    "Chat.Api/0.1.0": {
-      "sha512": "KZ0Xr3sKmGBxELNsMrUcYQmWm6h1/OMKF4UVdqnbyvmw7LbwBKVUknSUwYDtewuqNmuXb0x7ZUmLIwIKUx6A3g==",
+    "Chat.Api/0.1.0-20260929.2": {
+      "sha512": "icWHKrVs792b4b6QfYaDS3VWuN+9q9QzF1rqJP0iRjPlyRZbGITbkMBZbR7kTSABFaPP+N6N9tgR8oOrzjwMOQ==",
       "type": "package",
-      "path": "chat.api/0.1.0",
+      "path": "chat.api/0.1.0-20260929.2",
       "files": [
         ".nupkg.metadata",
-        "chat.api.0.1.0.nupkg.sha512",
+        "chat.api.0.1.0-20260929.2.nupkg.sha512",
         "chat.api.nuspec",
         "content/appsettings.Development.json",
         "content/appsettings.json",
@@ -1744,35 +1744,35 @@
         "lib/net8.0/Chat.Api.runtimeconfig.json"
       ]
     },
-    "Chat.Application/0.1.0": {
-      "sha512": "Y0LJOHX+KSgwe8CmO41l9SJp+lGGdJpe8UUlbZKe13icqr6fqsmusITlWJGv11/+LRxoeIc9iU1ef4qq+R1ZRg==",
+    "Chat.Application/0.1.0-20260929.2": {
+      "sha512": "mNaFc1GJyhNavy+uCKbwbAOHZIkuDsBWDG1tW51lvkbW8/YwIPoB6U5v4KFGYWJSX4o7E8q+IG89vGFxvibP0w==",
       "type": "package",
-      "path": "chat.application/0.1.0",
+      "path": "chat.application/0.1.0-20260929.2",
       "files": [
         ".nupkg.metadata",
-        "chat.application.0.1.0.nupkg.sha512",
+        "chat.application.0.1.0-20260929.2.nupkg.sha512",
         "chat.application.nuspec",
         "lib/net8.0/Chat.Application.dll"
       ]
     },
-    "Chat.Domain/0.1.0": {
-      "sha512": "+g8Aoq6R5rXZ01S1W4KbSb5MOWwYiNEPM3oVSWfqprbiagMHd4uv8YFyIg+pCWtk8UvrDHl5Ce6wj2JiQUfaMg==",
+    "Chat.Domain/0.1.0-20260929.2": {
+      "sha512": "23aC7wVL8Nez4ILxc/SOgm/UoQabULMK0W0FWwKJ87luOW2OcsQUcQUlUxBNa7ri91q9Vg615D68m1h5YRk8Rw==",
       "type": "package",
-      "path": "chat.domain/0.1.0",
+      "path": "chat.domain/0.1.0-20260929.2",
       "files": [
         ".nupkg.metadata",
-        "chat.domain.0.1.0.nupkg.sha512",
+        "chat.domain.0.1.0-20260929.2.nupkg.sha512",
         "chat.domain.nuspec",
         "lib/net8.0/Chat.Domain.dll"
       ]
     },
-    "Chat.Infrastructure/0.1.0": {
-      "sha512": "xgA9dtz/VQG1V1QQJEQtJan6DlAoBhrNOH3g0HJ3JltPjnWksxf25lN75S2221UepJ0GBgTH9Y8g0ImJZhR/Xw==",
+    "Chat.Infrastructure/0.1.0-20260929.2": {
+      "sha512": "x13JYKDdFBC6TdwZmTrl1eTgcOmE2HoJ5Vuuh9GwtyZFT9hiayY7+C8t35TxOxCN6yxp0MSPHPRF6TELrK4vIA==",
       "type": "package",
-      "path": "chat.infrastructure/0.1.0",
+      "path": "chat.infrastructure/0.1.0-20260929.2",
       "files": [
         ".nupkg.metadata",
-        "chat.infrastructure.0.1.0.nupkg.sha512",
+        "chat.infrastructure.0.1.0-20260929.2.nupkg.sha512",
         "chat.infrastructure.nuspec",
         "lib/net8.0/Chat.Infrastructure.dll"
       ]
@@ -3002,129 +3002,129 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Nexus.Integrations.TaskNotifications/0.1.0": {
-      "sha512": "RoMJUVWIHjoYS9+NcJHaECXJ5Lp/yJMdpU3bc1RlV7/q2IpR6bsZ+e4A7o7/ZFJ032wsjG7pwxhvR6wIqLgfvA==",
+    "Nexus.Integrations.TaskNotifications/0.1.0-20260929.2": {
+      "sha512": "YZ4pE30VHnLDZeI0QdtKRaa30lgnwWDBmbQdJZgX2d+QLn5RgquSUPuu3MsMxxxtKIGJpRurQvjs3/iO9li5Sw==",
       "type": "package",
-      "path": "nexus.integrations.tasknotifications/0.1.0",
+      "path": "nexus.integrations.tasknotifications/0.1.0-20260929.2",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/Nexus.Integrations.TaskNotifications.dll",
-        "nexus.integrations.tasknotifications.0.1.0.nupkg.sha512",
+        "nexus.integrations.tasknotifications.0.1.0-20260929.2.nupkg.sha512",
         "nexus.integrations.tasknotifications.nuspec"
       ]
     },
-    "Nexus.TaskManagement/0.1.0": {
-      "sha512": "AK99p7Iah8Mkant4ZQ6WR5CPS1ypkS83+/fsa6ff7QIdZy3HOY+/wd0r6GeIZdLOEDb4GpMgnUi2npQtCImXXw==",
+    "Nexus.TaskManagement/0.1.0-20260929.2": {
+      "sha512": "Vtc4NjrMZZhADdBSvGhNIOsYKgydoCtKUiUNOYK+wsO4Hse8o4J/EdJLPztOsKKHPmsq+llzjXiMcnDs8Tayug==",
       "type": "package",
-      "path": "nexus.taskmanagement/0.1.0",
+      "path": "nexus.taskmanagement/0.1.0-20260929.2",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/Nexus.TaskManagement.dll",
-        "nexus.taskmanagement.0.1.0.nupkg.sha512",
+        "nexus.taskmanagement.0.1.0-20260929.2.nupkg.sha512",
         "nexus.taskmanagement.nuspec"
       ]
     },
-    "Nexus.TaskManagement.Infrastructure/0.1.0": {
-      "sha512": "L8RGDvGt0/M4aThMjYG1G3m6KabFHG0c3F1md816n4SO5mqKDOyuAfwlXh3fYTatQiZBg+vU39hhUbgHvVBMgw==",
+    "Nexus.TaskManagement.Infrastructure/0.1.0-20260929.2": {
+      "sha512": "6qubn/r/xWGwumSdwo48oaUqZfYPaywvH9IuvrKy4nHStUY0RoUkrADliljEIV/bncScUsxqbREEjVkryPMfXg==",
       "type": "package",
-      "path": "nexus.taskmanagement.infrastructure/0.1.0",
+      "path": "nexus.taskmanagement.infrastructure/0.1.0-20260929.2",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/Nexus.TaskManagement.Infrastructure.dll",
         "lib/net8.0/Nexus.TaskManagement.Infrastructure.runtimeconfig.json",
-        "nexus.taskmanagement.infrastructure.0.1.0.nupkg.sha512",
+        "nexus.taskmanagement.infrastructure.0.1.0-20260929.2.nupkg.sha512",
         "nexus.taskmanagement.infrastructure.nuspec"
       ]
     },
-    "NexusCore.Application/0.1.0": {
-      "sha512": "ViGpuOI9yTi1O7LtC8RaWBrTg9QtDsOsB/4T8FHsPqM7KVdGpiO2iCoeUlUw3nxkCZiCPWe8Kx3wL5+dQTvkAQ==",
+    "NexusCore.Application/0.1.0-20260929.2": {
+      "sha512": "0uWSUbtH1twIIfMjQQp1EBsMBCLpj2K5voqCejBeHZ1g28xxgq95hBwkUdxVZ4AQyONCnQsFtEQIa1si+tilSQ==",
       "type": "package",
-      "path": "nexuscore.application/0.1.0",
+      "path": "nexuscore.application/0.1.0-20260929.2",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/NexusCore.Application.dll",
-        "nexuscore.application.0.1.0.nupkg.sha512",
+        "nexuscore.application.0.1.0-20260929.2.nupkg.sha512",
         "nexuscore.application.nuspec"
       ]
     },
-    "NexusCore.Domain/0.1.0": {
-      "sha512": "YngWZSQeBW4WLI9NmOL6qM69bxTgAvknT2TWejTC1vnrWSihT4prUXwQC/14quLodpJq95DZ9ePi8Wmu4Eag9g==",
+    "NexusCore.Domain/0.1.0-20260929.2": {
+      "sha512": "RuotZ6l4TxbO0zorGyQlSqqVbp2C4zA3q29Xla/9uH0YDR6ExJ8eSweu/8RnDeKb3gqdl5I+mjD7WgbQQLUKTg==",
       "type": "package",
-      "path": "nexuscore.domain/0.1.0",
+      "path": "nexuscore.domain/0.1.0-20260929.2",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/NexusCore.Domain.dll",
-        "nexuscore.domain.0.1.0.nupkg.sha512",
+        "nexuscore.domain.0.1.0-20260929.2.nupkg.sha512",
         "nexuscore.domain.nuspec"
       ]
     },
-    "NexusCore.Infrastructure/0.1.0": {
-      "sha512": "F7oBtm69ru9LL/zsqSbVtvPcreYmXlsHmo5+jV2V1bmO2A9AC2guInoPypar5+Yi7uRPxlCY7BsquHru8H6UlQ==",
+    "NexusCore.Infrastructure/0.1.0-20260929.2": {
+      "sha512": "Yqxr+FZeD//KoDnWLwbVaS5CeZr75r1RSAld7OEfrISpwc9ypz+onZ2lKrVzs80FZie64ZR+VwjrCYCDQMNTGA==",
       "type": "package",
-      "path": "nexuscore.infrastructure/0.1.0",
+      "path": "nexuscore.infrastructure/0.1.0-20260929.2",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/NexusCore.Infrastructure.dll",
         "lib/net8.0/NexusCore.Infrastructure.runtimeconfig.json",
-        "nexuscore.infrastructure.0.1.0.nupkg.sha512",
+        "nexuscore.infrastructure.0.1.0-20260929.2.nupkg.sha512",
         "nexuscore.infrastructure.nuspec"
       ]
     },
-    "NexusCore.SharedKernel/0.1.0": {
-      "sha512": "9lwyeRgVPgrlKGQq7FbTQpQiNvjMh4k4xrWFli8Q8Ot5zd7V+4CEdLiy6PvxtR6FUZ001vcuPF8mFgKeiZEcYw==",
+    "NexusCore.SharedKernel/0.1.0-20260929.2": {
+      "sha512": "SyQduY/CZgRc1k/miHKr3mm47X6XRcQJ/wZ4DJJkzUAyyDLpBu7iM2ONakizgT5RNIgn1MldTsFzLdWsO+Muug==",
       "type": "package",
-      "path": "nexuscore.sharedkernel/0.1.0",
+      "path": "nexuscore.sharedkernel/0.1.0-20260929.2",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/NexusCore.SharedKernel.dll",
-        "nexuscore.sharedkernel.0.1.0.nupkg.sha512",
+        "nexuscore.sharedkernel.0.1.0-20260929.2.nupkg.sha512",
         "nexuscore.sharedkernel.nuspec"
       ]
     },
-    "Notifications.Api/0.1.0": {
-      "sha512": "7zP1lmaXwj1NjifMw7D+jtcg7y/2tnpsBLNaiFg1oIDh7c2/MkGD766AIu772WGg1IcTjyWj6vVTnDEceovjrQ==",
+    "Notifications.Api/0.1.0-20260929.2": {
+      "sha512": "6LT5LGIZ0G55dBK+/5xqtJ/3ha4BdkiGx93Ag4b8s6dq4Q5NDHfXFpWZBKOF2jldAO5RKr2GeF6ZhGy6mqeITg==",
       "type": "package",
-      "path": "notifications.api/0.1.0",
+      "path": "notifications.api/0.1.0-20260929.2",
       "files": [
         ".nupkg.metadata",
         "content/appsettings.json",
         "contentFiles/any/net8.0/appsettings.json",
         "lib/net8.0/Notifications.Api.dll",
         "lib/net8.0/Notifications.Api.runtimeconfig.json",
-        "notifications.api.0.1.0.nupkg.sha512",
+        "notifications.api.0.1.0-20260929.2.nupkg.sha512",
         "notifications.api.nuspec"
       ]
     },
-    "Notifications.Application/0.1.0": {
-      "sha512": "pMjavz2YlFoHyJV/vrHNfrsM0kCFCqtdqEiApHzOzqPkZJ/DOIO40JoPLCLrrbB9MePdoEcsVR9cmZFxYPy1IQ==",
+    "Notifications.Application/0.1.0-20260929.2": {
+      "sha512": "QSaAd53DH0lPtfewmO0iWYoUkGM3oXAPcOJ9+YBvp/fDmdNYaZ5kB2xMcF0k5yHf8pz5C3CH7GNcbl16HoC9uw==",
       "type": "package",
-      "path": "notifications.application/0.1.0",
+      "path": "notifications.application/0.1.0-20260929.2",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/Notifications.Application.dll",
-        "notifications.application.0.1.0.nupkg.sha512",
+        "notifications.application.0.1.0-20260929.2.nupkg.sha512",
         "notifications.application.nuspec"
       ]
     },
-    "Notifications.Domain/0.1.0": {
-      "sha512": "nJZbW9EmXp8Qq0UOH/YbmdYR6k1Qq9jFMVqgbmZiZMX3v1XVYJfFALjISpndUA3C1GorZqNbvrz8T53ySO4FAA==",
+    "Notifications.Domain/0.1.0-20260929.2": {
+      "sha512": "OUIin8n5F4bZtmbaXvu9XUZCdRvdGRPkz0zLINm4s0B29uSmTr9/3xGReeozCgHPWYEz5q3DYJwQBJzjEwUCVg==",
       "type": "package",
-      "path": "notifications.domain/0.1.0",
+      "path": "notifications.domain/0.1.0-20260929.2",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/Notifications.Domain.dll",
-        "notifications.domain.0.1.0.nupkg.sha512",
+        "notifications.domain.0.1.0-20260929.2.nupkg.sha512",
         "notifications.domain.nuspec"
       ]
     },
-    "Notifications.Infrastructure/0.1.0": {
-      "sha512": "0qKh3HIJrMe4/vD1YWSWrODikRVOi15x2axGsPFd6MM6E+OCXwdRu/f64ECqSIgNarErO66L4gSyU2oXIxQrgQ==",
+    "Notifications.Infrastructure/0.1.0-20260929.2": {
+      "sha512": "+aaVyg6P7GzPsjf+fA1gERTJrOU1mj0g8cqW/eS2o0Svu33Dvsc3v27reK9fX3ypswNAeL5LzqXQijgpfQOgqQ==",
       "type": "package",
-      "path": "notifications.infrastructure/0.1.0",
+      "path": "notifications.infrastructure/0.1.0-20260929.2",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/Notifications.Infrastructure.dll",
-        "notifications.infrastructure.0.1.0.nupkg.sha512",
+        "notifications.infrastructure.0.1.0-20260929.2.nupkg.sha512",
         "notifications.infrastructure.nuspec"
       ]
     },
@@ -4244,13 +4244,13 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Chat.Api >= 0.1.0",
-      "Nexus.Integrations.TaskNotifications >= 0.1.0",
-      "Nexus.TaskManagement >= 0.1.0",
-      "Nexus.TaskManagement.Infrastructure >= 0.1.0",
-      "NexusCore.Infrastructure >= 0.1.0",
-      "Notifications.Api >= 0.1.0",
-      "Notifications.Infrastructure >= 0.1.0",
+      "Chat.Api >= 0.1.0-20260929.2",
+      "Nexus.Integrations.TaskNotifications >= 0.1.0-20260929.2",
+      "Nexus.TaskManagement >= 0.1.0-20260929.2",
+      "Nexus.TaskManagement.Infrastructure >= 0.1.0-20260929.2",
+      "NexusCore.Infrastructure >= 0.1.0-20260929.2",
+      "Notifications.Api >= 0.1.0-20260929.2",
+      "Notifications.Infrastructure >= 0.1.0-20260929.2",
       "Serilog >= 4.4.0",
       "Serilog.AspNetCore >= 8.0.0",
       "Serilog.Extensions.Hosting >= 8.0.0",
@@ -4264,24 +4264,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Reza\\.nuget\\packages\\": {},
+    "C:\\Users\\Asus\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TMPB-API\\TMPB-API\\TMPB-API\\TMPB-API.csproj",
+      "projectUniqueName": "D:\\TMPB-Api\\TMPB-API.csproj",
       "projectName": "TMPB-API",
-      "projectPath": "D:\\TMPB-API\\TMPB-API\\TMPB-API\\TMPB-API.csproj",
-      "packagesPath": "C:\\Users\\Reza\\.nuget\\packages\\",
-      "outputPath": "D:\\TMPB-API\\TMPB-API\\TMPB-API\\obj\\",
+      "projectPath": "D:\\TMPB-Api\\TMPB-API.csproj",
+      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+      "outputPath": "D:\\TMPB-Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "D:\\TMPB-API\\TMPB-API\\NuGet.Config",
-        "C:\\Users\\Reza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4289,12 +4288,12 @@
         "net8.0"
       ],
       "sources": {
-        "D:\\TMPB-API\\TMPB-API\\packages": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "D:\\TMPB-Api\\packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
-          "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {}
         }
@@ -4309,40 +4308,39 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.400"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net8.0": {
-        "framework": "net8.0",
         "targetAlias": "net8.0",
         "dependencies": {
           "Chat.Api": {
             "target": "Package",
-            "version": "[0.1.0, )"
+            "version": "[0.1.0-20260929.2, )"
           },
           "Nexus.Integrations.TaskNotifications": {
             "target": "Package",
-            "version": "[0.1.0, )"
+            "version": "[0.1.0-20260929.2, )"
           },
           "Nexus.TaskManagement": {
             "target": "Package",
-            "version": "[0.1.0, )"
+            "version": "[0.1.0-20260929.2, )"
           },
           "Nexus.TaskManagement.Infrastructure": {
             "target": "Package",
-            "version": "[0.1.0, )"
+            "version": "[0.1.0-20260929.2, )"
           },
           "NexusCore.Infrastructure": {
             "target": "Package",
-            "version": "[0.1.0, )"
+            "version": "[0.1.0-20260929.2, )"
           },
           "Notifications.Api": {
             "target": "Package",
-            "version": "[0.1.0, )"
+            "version": "[0.1.0-20260929.2, )"
           },
           "Notifications.Infrastructure": {
             "target": "Package",
-            "version": "[0.1.0, )"
+            "version": "[0.1.0-20260929.2, )"
           },
           "Serilog": {
             "target": "Package",
@@ -4399,19 +4397,19 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.30, 8.0.30]"
+            "version": "[8.0.29, 8.0.29]"
           },
           {
             "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[8.0.30, 8.0.30]"
+            "version": "[8.0.29, 8.0.29]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.30, 8.0.30]"
+            "version": "[8.0.29, 8.0.29]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.30, 8.0.30]"
+            "version": "[8.0.29, 8.0.29]"
           }
         ],
         "frameworkReferences": {
@@ -4422,7 +4420,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.110/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
