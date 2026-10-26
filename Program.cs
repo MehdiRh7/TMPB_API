@@ -27,6 +27,15 @@ using Nexus.TaskManagement.Endpoints;
 using Nexus.TaskManagement.Infrastructure;
 
 using Nexus.Integrations.TaskNotifications;
+using Nexus.Integrations.TaskReporting;
+
+using Nexus.Organization;
+using Nexus.Organization.Endpoints;
+using Nexus.Organization.Infrastructure;
+using Nexus.OrgStructure;
+using Nexus.OrgStructure.Endpoints;
+using Nexus.OrgStructure.Infrastructure;
+
 
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -34,6 +43,8 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
 using Serilog;
+
+using TMPB_API;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -68,6 +79,15 @@ builder.Services.AddTaskManagement();
 // Integration between TaskManagement and Notifications
 builder.Services.AddTaskNotificationsIntegration();
 
+// Organization units (deputies / departments)
+builder.Services.AddOrganizationApplication();
+
+// Organization structure: companies, positions, manager / subordinates
+builder.Services.AddOrgStructure();
+
+// Task reports along the organization structure
+builder.Services.AddTaskReporting();
+
 
 // ======================================================
 // Infrastructure Modules
@@ -84,6 +104,14 @@ builder.Services.AddNotificationInfrastructure(builder.Configuration);
 
 // Task Management
 builder.Services.AddTaskManagementInfrastructure(
+    builder.Configuration);
+
+// Organization units
+builder.Services.AddOrganizationInfrastructure(
+    builder.Configuration);
+
+// Organization structure
+builder.Services.AddOrgStructureInfrastructure(
     builder.Configuration);
 
 
@@ -376,6 +404,17 @@ app.MapHub<NotificationHub>("/hubs/notifications");
 
 
 // ======================================================
+// Organization Endpoints
+// ======================================================
+
+app.MapOrganizationEndpoints();
+
+app.MapOrgStructureEndpoints();
+
+app.MapTaskReportEndpoints();
+
+
+// ======================================================
 // Database Initialization
 // ======================================================
 
@@ -413,6 +452,29 @@ if (builder.Configuration.GetValue(
     await ModuleSchemaInitializer.EnsureCreatedAsync(
         services.GetRequiredService<ChatDbContext>(),
         cancellationToken);
+}
+
+
+// Organization and OrgStructure schemas (EF Core migrations): created on a new database, brought
+// up to date on an existing one - see OrgStructureSchema. Off: create them with the scripts in
+// db/ instead (see DEPLOYMENT-CONFIG.md).
+if (builder.Configuration.GetValue(
+    "Database:InitializeOrgStructureSchema",
+    true))
+{
+    using var scope = app.Services.CreateScope();
+
+    var services = scope.ServiceProvider;
+
+    await OrgStructureSchema.EnsureAsync(
+        services.GetRequiredService<OrganizationDbContext>(),
+        "organization.OrganizationUnits",
+        CancellationToken.None);
+
+    await OrgStructureSchema.EnsureAsync(
+        services.GetRequiredService<OrgStructureDbContext>(),
+        "org_structure.Companies",
+        CancellationToken.None);
 }
 
 

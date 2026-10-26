@@ -62,6 +62,118 @@ host name.
 
 Restart the API (IIS site recycle, service restart, etc.). No `dotnet build`, no source change.
 
+## 6. Organization structure schema (deputies, companies, positions)
+
+Nothing to do by default: with `Database:InitializeOrgStructureSchema` = `true` (in
+`appsettings.json`) the API creates the `organization` and `org_structure` tables on a new
+database and applies pending migrations on an existing one, at start-up. It never creates a
+table or column that already exists.
+
+Where schema changes must be run by a DBA instead, set it to `false` in
+`appsettings.Production.json` and run the scripts in `db/` (each needs `-I`, QUOTED_IDENTIFIER):
+
+| Database | Script |
+|---|---|
+| New (no `organization` / `org_structure` tables yet) — after the API has started once | `db/new-database-org-structure.sql` |
+| Already has them (an earlier version) | `db/upgrade-1-organization.sql`, then `db/upgrade-2-org-structure.sql`, then `db/upgrade-3-unit-positions.sql`, then `db/upgrade-4-position-companies.sql`, then `db/upgrade-5-posts.sql`, then `db/upgrade-6-task-posts.sql`, then `db/upgrade-7-substitution.sql`, then `db/upgrade-8-post-parent.sql`, then `db/upgrade-9-task-history.sql` |
+
+```
+sqlcmd -S <db-host> -d TMPB -I -i db/upgrade-1-organization.sql
+```
+
+Positions are per company, and a company's head is not chosen on the company: whoever is placed
+directly in the company with its position that has no superior («رئیس کل») is its head. The
+upgrade gives each position the companies it is used in, and gives today's heads that position.
+Positions it found with no superior keep none: give each one its superior (only the head's
+position stays without one).
+
+Posts (upgrade 5): each post has a code (unique in its company) and one person. A position
+several people held in a deputy becomes one post each; people placed directly in a company with
+a position get a post there (the head's included); every post gets a number of its company.
+
+## 7. Tasks are given to posts
+
+`OrgStructure:AssignTasksToPosts` is `true` in `appsettings.json`: a task's creator, responsible
+people and access list are posts, and their holders are the task's people. When someone leaves a
+post or a new person takes it, the post's tasks go with it. A vacant post can't be given a new
+task, and someone with no post can't be given one. When the API starts it gives tasks that have
+no posts yet to their people's main posts (people with no post stay on them as people). Set it
+to `false` in `appsettings.Production.json` to give tasks to people again.
+
+When a post falls vacant, its open tasks show in «کارتابل جانشینی» to the managers above the post
+and to holders of the permission «مدیریت کارتابل جانشینی». They may put another post of the
+company in charge of it (سرپرستی): its holder sees those tasks and comments on them as a stand-in
+(«جانشین ...»), nothing more. When someone takes the vacant post the stand-in ends by itself.
+
+Disabling a user's account takes them out of their posts: the posts fall vacant and their tasks
+go to «کارتابل جانشینی». Their deputy and set manager stay; enabled again, they need to be put
+back in a post.
+
+## 7.1 Giving tasks only to one's own level and below
+
+`OrgStructure:LimitTaskAssignment` is `true` in `appsettings.json`: in the org chart, a user makes
+responsible for a task only themselves, the people below them, the people of their own deputy at
+their level or lower, and the people of the company at their own level (an expert to an expert of
+another deputy; not someone in a higher position of their own deputy) - never anyone above. A
+person's level is that of their position: how many superior positions («سمت مافوق», set in «سمت‌ها»)
+are above it up to «رئیس کل» - the highest position they hold; someone with no position is measured
+by how many managers are above them in the chart. People with no
+place in the chart yet are not limited (and anyone may give them tasks); the permission «ارجاع
+فعالیت به همه‌ی سطوح سازمانی» lifts the limit for its holders (the Administrator role has it).
+Set it to `false` in `appsettings.Production.json` to let anyone give tasks to anyone.
+
+## 7.2 Posts under posts
+
+A post can sit under another post of the same deputy (or, for posts directly in the company,
+another of those), at any depth: e.g. «کارشناس» under «معاون». The holder of the post above is
+then the manager of the post's holder: they see their tasks in reports, may give them tasks with
+the limit above on, and see the post in «کارتابل جانشینی» when it falls vacant - but get no
+rights over the chart. A vacant post above is passed over to the next one up (or the deputy's
+manager). Set in the chart's post panel («پست مافوق»); a post with posts under it can't be removed.
+
+## 7.3 Each company on its own
+
+`OrgStructure:LimitToOwnCompany` is `true` in `appsettings.json`: everyone is kept to their own
+company - the companies they are placed in or head. Others' people are not in their user lists,
+chat, work teams or reports; they cannot be given a task, access to one or a message; the org chart
+and its panels show and change only their own company; «مدیریت همهٔ وظایف» shows only the tasks
+of their own people. Within the company, anyone may message anyone (a manager above too), and
+tasks follow 7.1 (an expert may give one to an expert of another deputy, never to someone above).
+Someone with no place in any company reaches nobody but themselves; people with no place yet stay
+in the user list, so they can be placed. The permission «دسترسی به همه‌ی شرکت‌ها» lifts the limit
+for its holders (the Administrator role has it). Set it to `false` in `appsettings.Production.json`
+to open the companies to one another.
+
+## 7.4 The switches at a glance
+
+Each one is on its own: turn off what is not wanted, the rest keeps working.
+
+| Setting (`OrgStructure:`) | On in this API | What it does | Lifted for holders of |
+| --- | --- | --- | --- |
+| `LimitTaskAssignment` | yes | tasks only to one's own level and below (7.1) | «ارجاع فعالیت به همه‌ی سطوح سازمانی» |
+| `AssignTasksToPosts` | yes | tasks given to posts, «کارتابل جانشینی» (7) | «مدیریت کارتابل جانشینی» (every vacant post) |
+| `LimitToOwnCompany` | yes | everyone kept to their own company (7.3) | «دسترسی به همه‌ی شرکت‌ها» |
+
+Work teams are always kept to one's own deputy with the org structure; «افزودن اعضای سایر
+معاونت‌ها به تیم کاری» lifts that (still within one's own company when 7.3 is on).
+
+## 8. Reminders and recurring tasks
+
+`TaskManagement:Scheduler:Enabled` is `true` in `appsettings.json`: recurring tasks, due-soon /
+overdue reminders and SMS held back during the quiet hours are sent by this API. Set it to
+`false` in `appsettings.Production.json` only on a second server of the same database that should
+not send them (one is enough; two would not send anything twice).
+
+## 9. Taking a newer NexusCore
+
+The NexusCore modules come as packages from `./packages` (see `nuget.config`), built in the Core
+repository with `eng/pack-core-modules.ps1`. To update:
+
+1. Copy the new `.nupkg` files of the packages this API uses into `./packages`.
+2. Set `<NexusCoreVersion>` in `TMPB-API.csproj` to the new version.
+3. Build and deploy. The schema changes of Task Management, Notifications and Chat are applied by
+   the modules at start-up; those of the organization modules as described in section 6.
+
 ---
 
 ### What NOT to do
