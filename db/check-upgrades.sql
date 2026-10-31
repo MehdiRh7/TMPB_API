@@ -1,4 +1,4 @@
--- Which of db/upgrade-1 .. upgrade-15 a database already has: read-only, changes nothing.
+-- Which of db/upgrade-1 .. upgrade-16 a database already has: read-only, changes nothing.
 -- Each step is recognised by what it adds (a table or column), so a database created whole by a newer
 -- version (no history rows) answers correctly too. Run the missing steps in order, from the first "no".
 --   sqlcmd -S <server> -d TMPB -I -f 65001 -i db/check-upgrades.sql
@@ -66,7 +66,10 @@ INSERT INTO @steps VALUES
  (15, N'upgrade-15-company-profile.sql',
      CASE WHEN COL_LENGTH(N'org_structure.Companies', N'HeadTitle') IS NOT NULL
                AND COL_LENGTH(N'org_structure.Companies', N'Logo') IS NOT NULL THEN 1 ELSE 0 END,
-     N'Companies.Phone ... Logo');
+     N'Companies.Phone ... Logo'),
+ (16, N'upgrade-16-user-personal-details.sql',
+     CASE WHEN COL_LENGTH(N'identity.Users', N'BirthDate') IS NOT NULL THEN 1 ELSE 0 END,
+     N'Users.Address, FatherName, BirthDate');
 
 PRINT N'== Upgrade steps';
 SELECT [Step], [Script], CASE [Applied] WHEN 1 THEN N'yes' ELSE N'NO' END AS [Applied], [Recognised by] FROM @steps ORDER BY [Step];
@@ -74,7 +77,7 @@ SELECT [Step], [Script], CASE [Applied] WHEN 1 THEN N'yes' ELSE N'NO' END AS [Ap
 DECLARE @firstMissing int = (SELECT MIN([Step]) FROM @steps WHERE [Applied] = 0);
 DECLARE @lastApplied int = (SELECT MAX([Step]) FROM @steps WHERE [Applied] = 1);
 IF @firstMissing IS NULL
-    PRINT N'== Result: up to date (all 15 steps applied).';
+    PRINT N'== Result: up to date (all 16 steps applied).';
 ELSE IF @lastApplied > @firstMissing
     PRINT N'== Result: steps are out of order - step ' + CAST(@firstMissing AS nvarchar(5)) + N' is missing but a later one is applied. Check before running anything.';
 ELSE
