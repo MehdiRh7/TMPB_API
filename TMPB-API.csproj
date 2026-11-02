@@ -29,6 +29,12 @@
     <PackageReference Include="Nexus.OrgStructure" Version="$(NexusCoreVersion)" />
     <PackageReference Include="Nexus.OrgStructure.Infrastructure" Version="$(NexusCoreVersion)" />
     <PackageReference Include="Nexus.Integrations.TaskReporting" Version="$(NexusCoreVersion)" />
+
+    <!-- Calendar and meetings: the meeting people follow the organization structure; minutes make tasks -->
+    <PackageReference Include="Nexus.Calendar" Version="$(NexusCoreVersion)" />
+    <PackageReference Include="Nexus.Calendar.Infrastructure" Version="$(NexusCoreVersion)" />
+    <PackageReference Include="Nexus.Integrations.CalendarOrgStructure" Version="$(NexusCoreVersion)" />
+    <PackageReference Include="Nexus.Integrations.CalendarTasks" Version="$(NexusCoreVersion)" />
   </ItemGroup>
 
   <ItemGroup>

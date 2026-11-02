@@ -31,6 +31,11 @@ using Nexus.TaskManagement.Infrastructure;
 using Nexus.Integrations.TaskNotifications;
 using Nexus.Integrations.TaskReporting;
 
+using Nexus.Calendar;
+using Nexus.Calendar.Infrastructure;
+using Nexus.Calendar.Infrastructure.Meetings;
+using Nexus.Integrations.CalendarTasks;
+using Nexus.Integrations.CalendarOrgStructure;
 using Nexus.Organization;
 using Nexus.Organization.Endpoints;
 using Nexus.Organization.Infrastructure;
@@ -88,8 +93,14 @@ builder.Services.AddOrganizationApplication();
 // Organization structure: companies, positions, manager / subordinates
 builder.Services.AddOrgStructure();
 
+// Calendar and meetings (the meeting people follow the organization structure; minutes make tasks)
+builder.Services.AddCalendarApplication();
+
 // Task reports along the organization structure
 builder.Services.AddTaskReporting();
+builder.Services.AddCalendarMeetings(builder.Configuration);
+builder.Services.AddCalendarOrgStructureIntegration();
+builder.Services.AddCalendarTasksIntegration();
 
 
 // ======================================================
@@ -116,6 +127,9 @@ builder.Services.AddOrganizationInfrastructure(
 // Organization structure
 builder.Services.AddOrgStructureInfrastructure(
     builder.Configuration);
+
+// Calendar and meetings
+builder.Services.AddCalendarInfrastructure(builder.Configuration);
 
 
 // ======================================================
@@ -435,6 +449,7 @@ if (builder.Configuration.IsUserGroupFeatureEnabled())
 // ======================================================
 
 app.MapTaskManagementEndpoints();
+app.MapMeetingEndpoints();
 
 
 // ======================================================
@@ -540,5 +555,12 @@ if (builder.Configuration.GetValue(
 // ======================================================
 // Run
 // ======================================================
+
+// Meeting schema (calendar.Meetings, calendar.MeetingParticipants): created on a new database; off: run db/upgrade-18-calendar-meetings.sql instead.
+if (builder.Configuration.GetValue("Database:InitializeMeetingSchema", true))
+{
+    using var scope = app.Services.CreateScope();
+    await ModuleSchemaInitializer.EnsureCreatedAsync(scope.ServiceProvider.GetRequiredService<MeetingDbContext>(), CancellationToken.None);
+}
 
 app.Run();

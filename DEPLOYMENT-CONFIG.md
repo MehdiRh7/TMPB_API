@@ -141,6 +141,13 @@ Stand-in for a set time (upgrade 17, `db/upgrade-17-stand-in-period.sql`): `org_
 (leave, a mission); without one it lasts while the post is vacant, as before. Only people of the post's own unit
 (or a unit below it) may stand in. `db/upgrade-17-rollback.sql` undoes it (stand-ins for a set time are removed).
 
+Calendar meetings (upgrade 18, `db/upgrade-18-calendar-meetings.sql`): the calendar's meetings («ایجاد جلسه»; the people a user may invite follow the
+organization structure; the minutes make tasks) keep their data in two new tables, `calendar.Meetings` and `calendar.MeetingParticipants`.
+With `Database:InitializeMeetingSchema` true (the default) the API creates them at start-up; set it to `false` in
+`appsettings.Production.json` and run the script when a DBA owns the schema. Nothing existing changes. Who may create, see, edit or delete
+meetings is decided by the permissions of the roles (`calendar` group of the role screen): a user without «ایجاد جلسه» sees the button disabled.
+Same as TejaratBank-API (where this step is numbered 17).
+
 ### 6.1 Moving a production database to the dynamic structure
 
 Do this once, in this order (steps 10 to 15). Nothing here changes what today's flat data means: every unit stays at
@@ -161,6 +168,7 @@ the top of its company, every company keeps its head and the people keep their m
    sqlcmd -S <db-host> -d TMPB -I -f 65001 -i db/upgrade-14-appointments.sql
    sqlcmd -S <db-host> -d TMPB -I -f 65001 -i db/upgrade-15-company-profile.sql
    sqlcmd -S <db-host> -d TMPB -I -f 65001 -i db/upgrade-17-stand-in-period.sql
+   sqlcmd -S <db-host> -d TMPB -I -f 65001 -i db/upgrade-18-calendar-meetings.sql
    ```
    With `Database:InitializeOrgStructureSchema` true (the default) the API makes the same changes at
    start-up; run the scripts when a DBA owns the schema.
