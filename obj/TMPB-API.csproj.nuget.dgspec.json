@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -42,7 +47,7 @@
           "dependencies": {
             "Chat.Api": {
               "target": "Package",
-              "version": "[0.1.0.1405080909-mahdi, )"
+              "version": "[0.1.0.1405081101-sessions, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -52,63 +57,63 @@
             },
             "Nexus.Calendar": {
               "target": "Package",
-              "version": "[0.1.0.1405080909-mahdi, )"
+              "version": "[0.1.0.1405081101-sessions, )"
             },
             "Nexus.Calendar.Infrastructure": {
               "target": "Package",
-              "version": "[0.1.0.1405080909-mahdi, )"
+              "version": "[0.1.0.1405081101-sessions, )"
             },
             "Nexus.Integrations.CalendarOrgStructure": {
               "target": "Package",
-              "version": "[0.1.0.1405080909-mahdi, )"
+              "version": "[0.1.0.1405081101-sessions, )"
             },
             "Nexus.Integrations.CalendarTasks": {
               "target": "Package",
-              "version": "[0.1.0.1405080909-mahdi, )"
+              "version": "[0.1.0.1405081101-sessions, )"
             },
             "Nexus.Integrations.TaskNotifications": {
               "target": "Package",
-              "version": "[0.1.0.1405080909-mahdi, )"
+              "version": "[0.1.0.1405081101-sessions, )"
             },
             "Nexus.Integrations.TaskReporting": {
               "target": "Package",
-              "version": "[0.1.0.1405080909-mahdi, )"
+              "version": "[0.1.0.1405081101-sessions, )"
             },
             "Nexus.OrgStructure": {
               "target": "Package",
-              "version": "[0.1.0.1405080909-mahdi, )"
+              "version": "[0.1.0.1405081101-sessions, )"
             },
             "Nexus.OrgStructure.Infrastructure": {
               "target": "Package",
-              "version": "[0.1.0.1405080909-mahdi, )"
+              "version": "[0.1.0.1405081101-sessions, )"
             },
             "Nexus.Organization": {
               "target": "Package",
-              "version": "[0.1.0.1405080909-mahdi, )"
+              "version": "[0.1.0.1405081101-sessions, )"
             },
             "Nexus.Organization.Infrastructure": {
               "target": "Package",
-              "version": "[0.1.0.1405080909-mahdi, )"
+              "version": "[0.1.0.1405081101-sessions, )"
             },
             "Nexus.TaskManagement": {
               "target": "Package",
-              "version": "[0.1.0.1405080909-mahdi, )"
+              "version": "[0.1.0.1405081101-sessions, )"
             },
             "Nexus.TaskManagement.Infrastructure": {
               "target": "Package",
-              "version": "[0.1.0.1405080909-mahdi, )"
+              "version": "[0.1.0.1405081101-sessions, )"
             },
             "NexusCore.Infrastructure": {
               "target": "Package",
-              "version": "[0.1.0.1405080909-mahdi, )"
+              "version": "[0.1.0.1405081101-sessions, )"
             },
             "Notifications.Api": {
               "target": "Package",
-              "version": "[0.1.0.1405080909-mahdi, )"
+              "version": "[0.1.0.1405081101-sessions, )"
             },
             "Notifications.Infrastructure": {
               "target": "Package",
-              "version": "[0.1.0.1405080909-mahdi, )"
+              "version": "[0.1.0.1405081101-sessions, )"
             },
             "Serilog": {
               "target": "Package",
@@ -174,7 +179,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.132/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/root/.dotnet/sdk/8.0.427/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

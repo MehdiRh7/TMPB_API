@@ -1,1 +1,11 @@
-{"Version":1,"Hash":"7jywiA/T6ZLwQx/9llzkAzfbaLy66EvFQqlqyVu1cdY=","Source":"TMPB-API","BasePath":"/","Mode":"Root","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
+{
+  "Version": 1,
+  "Hash": "OPLv9lr8bAwTabWa6tugFzA72Ikv9z8c3Sgf0POsvMk=",
+  "Source": "TMPB-API",
+  "BasePath": "_content/TMPB-API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
