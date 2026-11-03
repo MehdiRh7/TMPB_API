@@ -7,15 +7,15 @@
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/root/.nuget/packages/</NuGetPackageRoot>
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/root/.nuget/packages/</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.11.2</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.8.2</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="/root/.nuget/packages/" />
   </ItemGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Content Include="$(NuGetPackageRoot)notifications.api/0.1.0.1405081101-sessions/contentFiles/any/net8.0/appsettings.json" Condition="Exists('$(NuGetPackageRoot)notifications.api/0.1.0.1405081101-sessions/contentFiles/any/net8.0/appsettings.json')">
+    <Content Include="$(NuGetPackageRoot)notifications.api/0.1.0.1405080909-mahdi/contentFiles/any/net8.0/appsettings.json" Condition="Exists('$(NuGetPackageRoot)notifications.api/0.1.0.1405080909-mahdi/contentFiles/any/net8.0/appsettings.json')">
       <NuGetPackageId>Notifications.Api</NuGetPackageId>
-      <NuGetPackageVersion>0.1.0.1405081101-sessions</NuGetPackageVersion>
+      <NuGetPackageVersion>0.1.0.1405080909-mahdi</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
       <Pack>false</Pack>
       <Private>False</Private>
@@ -23,17 +23,17 @@
     </Content>
   </ItemGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Content Include="$(NuGetPackageRoot)chat.api/0.1.0.1405081101-sessions/contentFiles/any/net8.0/appsettings.Development.json" Condition="Exists('$(NuGetPackageRoot)chat.api/0.1.0.1405081101-sessions/contentFiles/any/net8.0/appsettings.Development.json')">
+    <Content Include="$(NuGetPackageRoot)chat.api/0.1.0.1405080909-mahdi/contentFiles/any/net8.0/appsettings.Development.json" Condition="Exists('$(NuGetPackageRoot)chat.api/0.1.0.1405080909-mahdi/contentFiles/any/net8.0/appsettings.Development.json')">
       <NuGetPackageId>Chat.Api</NuGetPackageId>
-      <NuGetPackageVersion>0.1.0.1405081101-sessions</NuGetPackageVersion>
+      <NuGetPackageVersion>0.1.0.1405080909-mahdi</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
       <Pack>false</Pack>
       <Private>False</Private>
       <Link>appsettings.Development.json</Link>
     </Content>
-    <Content Include="$(NuGetPackageRoot)chat.api/0.1.0.1405081101-sessions/contentFiles/any/net8.0/appsettings.json" Condition="Exists('$(NuGetPackageRoot)chat.api/0.1.0.1405081101-sessions/contentFiles/any/net8.0/appsettings.json')">
+    <Content Include="$(NuGetPackageRoot)chat.api/0.1.0.1405080909-mahdi/contentFiles/any/net8.0/appsettings.json" Condition="Exists('$(NuGetPackageRoot)chat.api/0.1.0.1405080909-mahdi/contentFiles/any/net8.0/appsettings.json')">
       <NuGetPackageId>Chat.Api</NuGetPackageId>
-      <NuGetPackageVersion>0.1.0.1405081101-sessions</NuGetPackageVersion>
+      <NuGetPackageVersion>0.1.0.1405080909-mahdi</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
       <Pack>false</Pack>
       <Private>False</Private>
