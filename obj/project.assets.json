@@ -60,11 +60,11 @@
           }
         }
       },
-      "Chat.Api/0.1.0.1405080909-mahdi": {
+      "Chat.Api/0.1.0.1405081201-mahdi": {
         "type": "package",
         "dependencies": {
-          "Chat.Application": "0.1.0.1405080909-mahdi",
-          "Chat.Infrastructure": "0.1.0.1405080909-mahdi",
+          "Chat.Application": "0.1.0.1405081201-mahdi",
+          "Chat.Infrastructure": "0.1.0.1405081201-mahdi",
           "Swashbuckle.AspNetCore": "6.6.2"
         },
         "compile": {
@@ -93,14 +93,14 @@
           }
         }
       },
-      "Chat.Application/0.1.0.1405080909-mahdi": {
+      "Chat.Application/0.1.0.1405081201-mahdi": {
         "type": "package",
         "dependencies": {
-          "Chat.Domain": "0.1.0.1405080909-mahdi",
+          "Chat.Domain": "0.1.0.1405081201-mahdi",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
           "Microsoft.EntityFrameworkCore": "8.0.24",
-          "NexusCore.Application": "0.1.0.1405080909-mahdi",
-          "NexusCore.SharedKernel": "0.1.0.1405080909-mahdi"
+          "NexusCore.Application": "0.1.0.1405081201-mahdi",
+          "NexusCore.SharedKernel": "0.1.0.1405081201-mahdi"
         },
         "compile": {
           "lib/net8.0/Chat.Application.dll": {}
@@ -109,10 +109,10 @@
           "lib/net8.0/Chat.Application.dll": {}
         }
       },
-      "Chat.Domain/0.1.0.1405080909-mahdi": {
+      "Chat.Domain/0.1.0.1405081201-mahdi": {
         "type": "package",
         "dependencies": {
-          "NexusCore.SharedKernel": "0.1.0.1405080909-mahdi"
+          "NexusCore.SharedKernel": "0.1.0.1405081201-mahdi"
         },
         "compile": {
           "lib/net8.0/Chat.Domain.dll": {}
@@ -121,10 +121,10 @@
           "lib/net8.0/Chat.Domain.dll": {}
         }
       },
-      "Chat.Infrastructure/0.1.0.1405080909-mahdi": {
+      "Chat.Infrastructure/0.1.0.1405081201-mahdi": {
         "type": "package",
         "dependencies": {
-          "Chat.Application": "0.1.0.1405080909-mahdi",
+          "Chat.Application": "0.1.0.1405081201-mahdi",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.24",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
@@ -1116,11 +1116,11 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
-      "Nexus.Calendar/0.1.0.1405080909-mahdi": {
+      "Nexus.Calendar/0.1.0.1405081201-mahdi": {
         "type": "package",
         "dependencies": {
-          "NexusCore.Application": "0.1.0.1405080909-mahdi",
-          "NexusCore.SharedKernel": "0.1.0.1405080909-mahdi"
+          "NexusCore.Application": "0.1.0.1405081201-mahdi",
+          "NexusCore.SharedKernel": "0.1.0.1405081201-mahdi"
         },
         "compile": {
           "lib/net8.0/Nexus.Calendar.dll": {}
@@ -1132,12 +1132,12 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Nexus.Calendar.Infrastructure/0.1.0.1405080909-mahdi": {
+      "Nexus.Calendar.Infrastructure/0.1.0.1405081201-mahdi": {
         "type": "package",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.24",
-          "Nexus.Calendar": "0.1.0.1405080909-mahdi",
-          "NexusCore.Infrastructure": "0.1.0.1405080909-mahdi"
+          "Nexus.Calendar": "0.1.0.1405081201-mahdi",
+          "NexusCore.Infrastructure": "0.1.0.1405081201-mahdi"
         },
         "compile": {
           "lib/net8.0/Nexus.Calendar.Infrastructure.dll": {
@@ -1153,13 +1153,13 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Nexus.Integrations.CalendarOrgStructure/0.1.0.1405080909-mahdi": {
+      "Nexus.Integrations.CalendarOrgStructure/0.1.0.1405081201-mahdi": {
         "type": "package",
         "dependencies": {
-          "Nexus.Calendar": "0.1.0.1405080909-mahdi",
-          "Nexus.OrgStructure": "0.1.0.1405080909-mahdi",
-          "Nexus.Organization": "0.1.0.1405080909-mahdi",
-          "NexusCore.Infrastructure": "0.1.0.1405080909-mahdi"
+          "Nexus.Calendar": "0.1.0.1405081201-mahdi",
+          "Nexus.OrgStructure": "0.1.0.1405081201-mahdi",
+          "Nexus.Organization": "0.1.0.1405081201-mahdi",
+          "NexusCore.Infrastructure": "0.1.0.1405081201-mahdi"
         },
         "compile": {
           "lib/net8.0/Nexus.Integrations.CalendarOrgStructure.dll": {}
@@ -1168,13 +1168,13 @@
           "lib/net8.0/Nexus.Integrations.CalendarOrgStructure.dll": {}
         }
       },
-      "Nexus.Integrations.CalendarTasks/0.1.0.1405080909-mahdi": {
+      "Nexus.Integrations.CalendarTasks/0.1.0.1405081201-mahdi": {
         "type": "package",
         "dependencies": {
-          "Nexus.Calendar": "0.1.0.1405080909-mahdi",
-          "Nexus.TaskManagement": "0.1.0.1405080909-mahdi",
-          "Nexus.TaskManagement.Infrastructure": "0.1.0.1405080909-mahdi",
-          "NexusCore.SharedKernel": "0.1.0.1405080909-mahdi"
+          "Nexus.Calendar": "0.1.0.1405081201-mahdi",
+          "Nexus.TaskManagement": "0.1.0.1405081201-mahdi",
+          "Nexus.TaskManagement.Infrastructure": "0.1.0.1405081201-mahdi",
+          "NexusCore.SharedKernel": "0.1.0.1405081201-mahdi"
         },
         "compile": {
           "lib/net8.0/Nexus.Integrations.CalendarTasks.dll": {}
@@ -1186,11 +1186,11 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Nexus.Integrations.TaskNotifications/0.1.0.1405080909-mahdi": {
+      "Nexus.Integrations.TaskNotifications/0.1.0.1405081201-mahdi": {
         "type": "package",
         "dependencies": {
-          "Nexus.TaskManagement": "0.1.0.1405080909-mahdi",
-          "Notifications.Application": "0.1.0.1405080909-mahdi"
+          "Nexus.TaskManagement": "0.1.0.1405081201-mahdi",
+          "Notifications.Application": "0.1.0.1405081201-mahdi"
         },
         "compile": {
           "lib/net8.0/Nexus.Integrations.TaskNotifications.dll": {}
@@ -1199,12 +1199,12 @@
           "lib/net8.0/Nexus.Integrations.TaskNotifications.dll": {}
         }
       },
-      "Nexus.Integrations.TaskReporting/0.1.0.1405080909-mahdi": {
+      "Nexus.Integrations.TaskReporting/0.1.0.1405081201-mahdi": {
         "type": "package",
         "dependencies": {
-          "Nexus.OrgStructure": "0.1.0.1405080909-mahdi",
-          "Nexus.TaskManagement.Infrastructure": "0.1.0.1405080909-mahdi",
-          "NexusCore.Application": "0.1.0.1405080909-mahdi"
+          "Nexus.OrgStructure": "0.1.0.1405081201-mahdi",
+          "Nexus.TaskManagement.Infrastructure": "0.1.0.1405081201-mahdi",
+          "NexusCore.Application": "0.1.0.1405081201-mahdi"
         },
         "compile": {
           "lib/net8.0/Nexus.Integrations.TaskReporting.dll": {}
@@ -1216,12 +1216,12 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Nexus.Organization/0.1.0.1405080909-mahdi": {
+      "Nexus.Organization/0.1.0.1405081201-mahdi": {
         "type": "package",
         "dependencies": {
           "FluentValidation": "11.11.0",
-          "NexusCore.Application": "0.1.0.1405080909-mahdi",
-          "NexusCore.SharedKernel": "0.1.0.1405080909-mahdi"
+          "NexusCore.Application": "0.1.0.1405081201-mahdi",
+          "NexusCore.SharedKernel": "0.1.0.1405081201-mahdi"
         },
         "compile": {
           "lib/net8.0/Nexus.Organization.dll": {}
@@ -1233,12 +1233,12 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Nexus.Organization.Infrastructure/0.1.0.1405080909-mahdi": {
+      "Nexus.Organization.Infrastructure/0.1.0.1405081201-mahdi": {
         "type": "package",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.24",
-          "Nexus.Organization": "0.1.0.1405080909-mahdi",
-          "NexusCore.Infrastructure": "0.1.0.1405080909-mahdi"
+          "Nexus.Organization": "0.1.0.1405081201-mahdi",
+          "NexusCore.Infrastructure": "0.1.0.1405081201-mahdi"
         },
         "compile": {
           "lib/net8.0/Nexus.Organization.Infrastructure.dll": {
@@ -1251,12 +1251,12 @@
           }
         }
       },
-      "Nexus.OrgStructure/0.1.0.1405080909-mahdi": {
+      "Nexus.OrgStructure/0.1.0.1405081201-mahdi": {
         "type": "package",
         "dependencies": {
-          "Nexus.Organization": "0.1.0.1405080909-mahdi",
-          "NexusCore.Application": "0.1.0.1405080909-mahdi",
-          "NexusCore.SharedKernel": "0.1.0.1405080909-mahdi"
+          "Nexus.Organization": "0.1.0.1405081201-mahdi",
+          "NexusCore.Application": "0.1.0.1405081201-mahdi",
+          "NexusCore.SharedKernel": "0.1.0.1405081201-mahdi"
         },
         "compile": {
           "lib/net8.0/Nexus.OrgStructure.dll": {}
@@ -1268,12 +1268,12 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Nexus.OrgStructure.Infrastructure/0.1.0.1405080909-mahdi": {
+      "Nexus.OrgStructure.Infrastructure/0.1.0.1405081201-mahdi": {
         "type": "package",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.24",
-          "Nexus.OrgStructure": "0.1.0.1405080909-mahdi",
-          "NexusCore.Infrastructure": "0.1.0.1405080909-mahdi"
+          "Nexus.OrgStructure": "0.1.0.1405081201-mahdi",
+          "NexusCore.Infrastructure": "0.1.0.1405081201-mahdi"
         },
         "compile": {
           "lib/net8.0/Nexus.OrgStructure.Infrastructure.dll": {
@@ -1286,12 +1286,12 @@
           }
         }
       },
-      "Nexus.TaskManagement/0.1.0.1405080909-mahdi": {
+      "Nexus.TaskManagement/0.1.0.1405081201-mahdi": {
         "type": "package",
         "dependencies": {
           "FluentValidation": "11.11.0",
-          "NexusCore.Application": "0.1.0.1405080909-mahdi",
-          "NexusCore.SharedKernel": "0.1.0.1405080909-mahdi"
+          "NexusCore.Application": "0.1.0.1405081201-mahdi",
+          "NexusCore.SharedKernel": "0.1.0.1405081201-mahdi"
         },
         "compile": {
           "lib/net8.0/Nexus.TaskManagement.dll": {}
@@ -1303,12 +1303,12 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Nexus.TaskManagement.Infrastructure/0.1.0.1405080909-mahdi": {
+      "Nexus.TaskManagement.Infrastructure/0.1.0.1405081201-mahdi": {
         "type": "package",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.24",
-          "Nexus.TaskManagement": "0.1.0.1405080909-mahdi",
-          "NexusCore.Infrastructure": "0.1.0.1405080909-mahdi"
+          "Nexus.TaskManagement": "0.1.0.1405081201-mahdi",
+          "NexusCore.Infrastructure": "0.1.0.1405081201-mahdi"
         },
         "compile": {
           "lib/net8.0/Nexus.TaskManagement.Infrastructure.dll": {
@@ -1321,15 +1321,15 @@
           }
         }
       },
-      "NexusCore.Application/0.1.0.1405080909-mahdi": {
+      "NexusCore.Application/0.1.0.1405081201-mahdi": {
         "type": "package",
         "dependencies": {
           "FluentValidation": "11.11.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.12",
           "Microsoft.EntityFrameworkCore": "8.0.24",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
-          "NexusCore.Domain": "0.1.0.1405080909-mahdi",
-          "NexusCore.SharedKernel": "0.1.0.1405080909-mahdi"
+          "NexusCore.Domain": "0.1.0.1405081201-mahdi",
+          "NexusCore.SharedKernel": "0.1.0.1405081201-mahdi"
         },
         "compile": {
           "lib/net8.0/NexusCore.Application.dll": {}
@@ -1341,10 +1341,10 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "NexusCore.Domain/0.1.0.1405080909-mahdi": {
+      "NexusCore.Domain/0.1.0.1405081201-mahdi": {
         "type": "package",
         "dependencies": {
-          "NexusCore.SharedKernel": "0.1.0.1405080909-mahdi"
+          "NexusCore.SharedKernel": "0.1.0.1405081201-mahdi"
         },
         "compile": {
           "lib/net8.0/NexusCore.Domain.dll": {}
@@ -1353,15 +1353,15 @@
           "lib/net8.0/NexusCore.Domain.dll": {}
         }
       },
-      "NexusCore.Infrastructure/0.1.0.1405080909-mahdi": {
+      "NexusCore.Infrastructure/0.1.0.1405081201-mahdi": {
         "type": "package",
         "dependencies": {
           "BCrypt.Net-Next": "4.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.24",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.24",
-          "NexusCore.Application": "0.1.0.1405080909-mahdi",
-          "NexusCore.Domain": "0.1.0.1405080909-mahdi",
-          "NexusCore.SharedKernel": "0.1.0.1405080909-mahdi",
+          "NexusCore.Application": "0.1.0.1405081201-mahdi",
+          "NexusCore.Domain": "0.1.0.1405081201-mahdi",
+          "NexusCore.SharedKernel": "0.1.0.1405081201-mahdi",
           "System.DirectoryServices.Protocols": "8.0.1"
         },
         "compile": {
@@ -1375,7 +1375,7 @@
           }
         }
       },
-      "NexusCore.SharedKernel/0.1.0.1405080909-mahdi": {
+      "NexusCore.SharedKernel/0.1.0.1405081201-mahdi": {
         "type": "package",
         "compile": {
           "lib/net8.0/NexusCore.SharedKernel.dll": {}
@@ -1384,12 +1384,12 @@
           "lib/net8.0/NexusCore.SharedKernel.dll": {}
         }
       },
-      "Notifications.Api/0.1.0.1405080909-mahdi": {
+      "Notifications.Api/0.1.0.1405081201-mahdi": {
         "type": "package",
         "dependencies": {
           "MediatR": "11.0.0",
-          "NexusCore.Application": "0.1.0.1405080909-mahdi",
-          "Notifications.Application": "0.1.0.1405080909-mahdi",
+          "NexusCore.Application": "0.1.0.1405081201-mahdi",
+          "Notifications.Application": "0.1.0.1405081201-mahdi",
           "Swashbuckle.AspNetCore": "6.6.2"
         },
         "compile": {
@@ -1413,13 +1413,13 @@
           }
         }
       },
-      "Notifications.Application/0.1.0.1405080909-mahdi": {
+      "Notifications.Application/0.1.0.1405081201-mahdi": {
         "type": "package",
         "dependencies": {
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
           "Microsoft.EntityFrameworkCore": "8.0.24",
-          "NexusCore.SharedKernel": "0.1.0.1405080909-mahdi",
-          "Notifications.Domain": "0.1.0.1405080909-mahdi"
+          "NexusCore.SharedKernel": "0.1.0.1405081201-mahdi",
+          "Notifications.Domain": "0.1.0.1405081201-mahdi"
         },
         "compile": {
           "lib/net8.0/Notifications.Application.dll": {}
@@ -1428,10 +1428,10 @@
           "lib/net8.0/Notifications.Application.dll": {}
         }
       },
-      "Notifications.Domain/0.1.0.1405080909-mahdi": {
+      "Notifications.Domain/0.1.0.1405081201-mahdi": {
         "type": "package",
         "dependencies": {
-          "NexusCore.SharedKernel": "0.1.0.1405080909-mahdi"
+          "NexusCore.SharedKernel": "0.1.0.1405081201-mahdi"
         },
         "compile": {
           "lib/net8.0/Notifications.Domain.dll": {}
@@ -1440,15 +1440,15 @@
           "lib/net8.0/Notifications.Domain.dll": {}
         }
       },
-      "Notifications.Infrastructure/0.1.0.1405080909-mahdi": {
+      "Notifications.Infrastructure/0.1.0.1405081201-mahdi": {
         "type": "package",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.24",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.24",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
           "Microsoft.Extensions.Hosting.Abstractions": "8.0.0",
-          "Notifications.Application": "0.1.0.1405080909-mahdi",
-          "Notifications.Domain": "0.1.0.1405080909-mahdi"
+          "Notifications.Application": "0.1.0.1405081201-mahdi",
+          "Notifications.Domain": "0.1.0.1405081201-mahdi"
         },
         "compile": {
           "lib/net8.0/Notifications.Infrastructure.dll": {}
@@ -2364,13 +2364,13 @@
         "readme.md"
       ]
     },
-    "Chat.Api/0.1.0.1405080909-mahdi": {
-      "sha512": "Y7VMhangzoxFsrPHidZX4hZZkbG5VWiPEuLIefcDXUHNp+kzYPQUadukflm9JvfYJs4IQTyjrD2PWlmYJ43+pQ==",
+    "Chat.Api/0.1.0.1405081201-mahdi": {
+      "sha512": "ShqncgSjxQKLmIlPbcL9VpoOHDAdsOGljuw4d8si890btN0t6W+fg+5TQuuyh0YX0wrmIaotmRUoaxsE2x6cAQ==",
       "type": "package",
-      "path": "chat.api/0.1.0.1405080909-mahdi",
+      "path": "chat.api/0.1.0.1405081201-mahdi",
       "files": [
         ".nupkg.metadata",
-        "chat.api.0.1.0.1405080909-mahdi.nupkg.sha512",
+        "chat.api.0.1.0.1405081201-mahdi.nupkg.sha512",
         "chat.api.nuspec",
         "content/appsettings.Development.json",
         "content/appsettings.json",
@@ -2380,35 +2380,35 @@
         "lib/net8.0/Chat.Api.runtimeconfig.json"
       ]
     },
-    "Chat.Application/0.1.0.1405080909-mahdi": {
-      "sha512": "XTPm5GLKMhDvNefKnZnrnJ5XY4wC7+KMaXuxygMtF3ozIYGg8V7yzvlN6GppKXnVtag1FCdp7W4H4wTMpilbsA==",
+    "Chat.Application/0.1.0.1405081201-mahdi": {
+      "sha512": "7NasvR3l7TcedMi/zQ0dkLc3VBdQY00eFLdyn75uZu1XaFrZJcki6bLa385cL7khU0hf3u3v658orv2YAkODVQ==",
       "type": "package",
-      "path": "chat.application/0.1.0.1405080909-mahdi",
+      "path": "chat.application/0.1.0.1405081201-mahdi",
       "files": [
         ".nupkg.metadata",
-        "chat.application.0.1.0.1405080909-mahdi.nupkg.sha512",
+        "chat.application.0.1.0.1405081201-mahdi.nupkg.sha512",
         "chat.application.nuspec",
         "lib/net8.0/Chat.Application.dll"
       ]
     },
-    "Chat.Domain/0.1.0.1405080909-mahdi": {
-      "sha512": "vJ4CPxk5mP+aSmYIm8YGLOh4750sP1zOrU8AYvhANYIScIy4/1eL8kxRHy7cGxYGSfUQkxxbs+/0qJEa9KhhFw==",
+    "Chat.Domain/0.1.0.1405081201-mahdi": {
+      "sha512": "BqPgMcRmyL9ZeGZsJoIbD3sszL5aPhwHRAbQVULvKKEeg/HLpFyvGDeje+RMN7xrtHr9WmCI0nDldJQhXlZWNw==",
       "type": "package",
-      "path": "chat.domain/0.1.0.1405080909-mahdi",
+      "path": "chat.domain/0.1.0.1405081201-mahdi",
       "files": [
         ".nupkg.metadata",
-        "chat.domain.0.1.0.1405080909-mahdi.nupkg.sha512",
+        "chat.domain.0.1.0.1405081201-mahdi.nupkg.sha512",
         "chat.domain.nuspec",
         "lib/net8.0/Chat.Domain.dll"
       ]
     },
-    "Chat.Infrastructure/0.1.0.1405080909-mahdi": {
-      "sha512": "MheqvRFk/tumQT1j1ZYeiYWQ0ZCDKE/83wZRJeLujec+ZwFG2qPqZVWQOe8Boxk1SlWOJOHhcZLqovt/2BDHEw==",
+    "Chat.Infrastructure/0.1.0.1405081201-mahdi": {
+      "sha512": "rPGdI775wA5SXnSFNWyJe/TPHeWiWLIjgGSayQ+IapTyUQBWnJAujpxZR0U46CX8QaWJiQK6Ue1DaOHtW7jwsg==",
       "type": "package",
-      "path": "chat.infrastructure/0.1.0.1405080909-mahdi",
+      "path": "chat.infrastructure/0.1.0.1405081201-mahdi",
       "files": [
         ".nupkg.metadata",
-        "chat.infrastructure.0.1.0.1405080909-mahdi.nupkg.sha512",
+        "chat.infrastructure.0.1.0.1405081201-mahdi.nupkg.sha512",
         "chat.infrastructure.nuspec",
         "lib/net8.0/Chat.Infrastructure.dll"
       ]
@@ -4111,231 +4111,231 @@
         "mono.texttemplating.nuspec"
       ]
     },
-    "Nexus.Calendar/0.1.0.1405080909-mahdi": {
-      "sha512": "YKrjvmd4SMRjx2S4uVNQ3RF8+t7lfntfxJBltRzUKDCPmIW/WkXhlQshbByhEoresMfugNH9ZvpOZLc78xtxUQ==",
+    "Nexus.Calendar/0.1.0.1405081201-mahdi": {
+      "sha512": "D/VG0A82DzMya5pHLeDTgC+jhLal6wgjXKYjOsvzJYoe/cqGdamLA1XIwr3lWhghvbsr0AorPn4msSHNP9JFxQ==",
       "type": "package",
-      "path": "nexus.calendar/0.1.0.1405080909-mahdi",
+      "path": "nexus.calendar/0.1.0.1405081201-mahdi",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/Nexus.Calendar.dll",
-        "nexus.calendar.0.1.0.1405080909-mahdi.nupkg.sha512",
+        "nexus.calendar.0.1.0.1405081201-mahdi.nupkg.sha512",
         "nexus.calendar.nuspec"
       ]
     },
-    "Nexus.Calendar.Infrastructure/0.1.0.1405080909-mahdi": {
-      "sha512": "hiGERZ46uorHxdw6pzc3LyPhRBdkRK5cbKCcTb4i7N+GYjgqlm2k6xaHl393JBUzbt1fUqcy7eeVV1uLhsztnA==",
+    "Nexus.Calendar.Infrastructure/0.1.0.1405081201-mahdi": {
+      "sha512": "zDPoGE3KHgQc5GqHF1ZGu9wXVKfKOAzgqPMO/hhZmFeFkzYGx2qIdZ4oJxiqYkin5tuc5hKCLMD1eMbBrkUqpQ==",
       "type": "package",
-      "path": "nexus.calendar.infrastructure/0.1.0.1405080909-mahdi",
+      "path": "nexus.calendar.infrastructure/0.1.0.1405081201-mahdi",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/Nexus.Calendar.Infrastructure.dll",
         "lib/net8.0/Nexus.Calendar.Infrastructure.runtimeconfig.json",
-        "nexus.calendar.infrastructure.0.1.0.1405080909-mahdi.nupkg.sha512",
+        "nexus.calendar.infrastructure.0.1.0.1405081201-mahdi.nupkg.sha512",
         "nexus.calendar.infrastructure.nuspec"
       ]
     },
-    "Nexus.Integrations.CalendarOrgStructure/0.1.0.1405080909-mahdi": {
-      "sha512": "QH7XFOgUktgLZg1A6riQfoCDpQPHiZo/gnXo9Hn65KifoAyUEtItAbMyNm45aKJZ+fUxLblUW7n0k13DvOQoGg==",
+    "Nexus.Integrations.CalendarOrgStructure/0.1.0.1405081201-mahdi": {
+      "sha512": "w++sHdOMjhl+idrgnO9NgSp3uJGg8R7I1ImTRDFBPPkX/feIegxgAjwp2l/03asnfmV2A4ti90fNCPfwqunXKg==",
       "type": "package",
-      "path": "nexus.integrations.calendarorgstructure/0.1.0.1405080909-mahdi",
+      "path": "nexus.integrations.calendarorgstructure/0.1.0.1405081201-mahdi",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/Nexus.Integrations.CalendarOrgStructure.dll",
-        "nexus.integrations.calendarorgstructure.0.1.0.1405080909-mahdi.nupkg.sha512",
+        "nexus.integrations.calendarorgstructure.0.1.0.1405081201-mahdi.nupkg.sha512",
         "nexus.integrations.calendarorgstructure.nuspec"
       ]
     },
-    "Nexus.Integrations.CalendarTasks/0.1.0.1405080909-mahdi": {
-      "sha512": "fvToWr5beVs1vvU8E9NrOW3uno1davnR6DsoqLICs0k9GC00SeHZFXDGE6l5ZmTUeFOoILoi3D2tiV6PBoxQjw==",
+    "Nexus.Integrations.CalendarTasks/0.1.0.1405081201-mahdi": {
+      "sha512": "fZQGcg1myoVgp3S3cf1LzhFQNXnusWqQsmaquoO8nIRpBZMntmvzj4MH3mPkprrCh9K3KoSSWHy90DKaBGYYGQ==",
       "type": "package",
-      "path": "nexus.integrations.calendartasks/0.1.0.1405080909-mahdi",
+      "path": "nexus.integrations.calendartasks/0.1.0.1405081201-mahdi",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/Nexus.Integrations.CalendarTasks.dll",
-        "nexus.integrations.calendartasks.0.1.0.1405080909-mahdi.nupkg.sha512",
+        "nexus.integrations.calendartasks.0.1.0.1405081201-mahdi.nupkg.sha512",
         "nexus.integrations.calendartasks.nuspec"
       ]
     },
-    "Nexus.Integrations.TaskNotifications/0.1.0.1405080909-mahdi": {
-      "sha512": "U4lRy8oH2sfd/CM8BGjdKdNW/L/YvPb7mUIhDiU2DZcGcNHYsqmlonyogdoTx8hnpo3HJYbjoZRx0f9GEGLf0Q==",
+    "Nexus.Integrations.TaskNotifications/0.1.0.1405081201-mahdi": {
+      "sha512": "e1GmvGmGe+fal3NtxI+mfmzamw05VqPb4sIc0YBj+g5BYCc3ivD6n/PVDhM6ec95PLWzjTOsWC35g8XeN36jQg==",
       "type": "package",
-      "path": "nexus.integrations.tasknotifications/0.1.0.1405080909-mahdi",
+      "path": "nexus.integrations.tasknotifications/0.1.0.1405081201-mahdi",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/Nexus.Integrations.TaskNotifications.dll",
-        "nexus.integrations.tasknotifications.0.1.0.1405080909-mahdi.nupkg.sha512",
+        "nexus.integrations.tasknotifications.0.1.0.1405081201-mahdi.nupkg.sha512",
         "nexus.integrations.tasknotifications.nuspec"
       ]
     },
-    "Nexus.Integrations.TaskReporting/0.1.0.1405080909-mahdi": {
-      "sha512": "j1QwABUymJ4LnhYi21lpPPEse7DweG9VfkXwEIcQzXXJDC6cLpCg+2dFYgz6dOqfazKgSVzzrjzKI9DnsB1nQQ==",
+    "Nexus.Integrations.TaskReporting/0.1.0.1405081201-mahdi": {
+      "sha512": "m5aPHwMGIMC596HXNnUuKOyuFTroav+BNP2drpStAwroBZylZtCIJYn7c1+ilZgoxrS5QRFd28UM3q9x3G0+qw==",
       "type": "package",
-      "path": "nexus.integrations.taskreporting/0.1.0.1405080909-mahdi",
+      "path": "nexus.integrations.taskreporting/0.1.0.1405081201-mahdi",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/Nexus.Integrations.TaskReporting.dll",
-        "nexus.integrations.taskreporting.0.1.0.1405080909-mahdi.nupkg.sha512",
+        "nexus.integrations.taskreporting.0.1.0.1405081201-mahdi.nupkg.sha512",
         "nexus.integrations.taskreporting.nuspec"
       ]
     },
-    "Nexus.Organization/0.1.0.1405080909-mahdi": {
-      "sha512": "DNVAm936ico30LEnK/BiafDrDGv/NXbGtyhXCFJpVUkZe3yW8xquXutF8jHFBZdhOQk4e0+7UF3EGOh3Qzg7hQ==",
+    "Nexus.Organization/0.1.0.1405081201-mahdi": {
+      "sha512": "yyHsAWmpu/VNp3qi3IUvtOd4W4e47DmveLwF1P+oY4x9RUyPoN7obou5zUQlwuU2KastxysRk77yUoNCMiuYpQ==",
       "type": "package",
-      "path": "nexus.organization/0.1.0.1405080909-mahdi",
+      "path": "nexus.organization/0.1.0.1405081201-mahdi",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/Nexus.Organization.dll",
-        "nexus.organization.0.1.0.1405080909-mahdi.nupkg.sha512",
+        "nexus.organization.0.1.0.1405081201-mahdi.nupkg.sha512",
         "nexus.organization.nuspec"
       ]
     },
-    "Nexus.Organization.Infrastructure/0.1.0.1405080909-mahdi": {
-      "sha512": "xagiVrjZibBTSCHP2i3D7esyD/9hGYboZkVjZyeg7ock2xGHFyEiwn5rIWT5C70rxaUx70lkbgQmSyBCrQ2X2g==",
+    "Nexus.Organization.Infrastructure/0.1.0.1405081201-mahdi": {
+      "sha512": "YHZM5AW109anVrMr2lzsR27pdlEWOBVJ5HYpDfJsac/k3mpzBRK6w6C45L0X4d9BzwLnE8o7z9zNehdJJpY9Mg==",
       "type": "package",
-      "path": "nexus.organization.infrastructure/0.1.0.1405080909-mahdi",
+      "path": "nexus.organization.infrastructure/0.1.0.1405081201-mahdi",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/Nexus.Organization.Infrastructure.dll",
         "lib/net8.0/Nexus.Organization.Infrastructure.runtimeconfig.json",
-        "nexus.organization.infrastructure.0.1.0.1405080909-mahdi.nupkg.sha512",
+        "nexus.organization.infrastructure.0.1.0.1405081201-mahdi.nupkg.sha512",
         "nexus.organization.infrastructure.nuspec"
       ]
     },
-    "Nexus.OrgStructure/0.1.0.1405080909-mahdi": {
-      "sha512": "eOeyG7CLa1S96RcSBDZ017djeoYryTrBs1Kxo8AnOip6h08/fDGKZZk8OPMYfEGDcHEhw7XY3ejDMOjRtCv2WA==",
+    "Nexus.OrgStructure/0.1.0.1405081201-mahdi": {
+      "sha512": "kulp3RGe9dRf5qS/x8ulz+05XnP8Gw5bwy6nk8gEEb6klUMfkL2Z21voLOnkJwpgh12mVqb2wHsavH/k3qTAnw==",
       "type": "package",
-      "path": "nexus.orgstructure/0.1.0.1405080909-mahdi",
+      "path": "nexus.orgstructure/0.1.0.1405081201-mahdi",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/Nexus.OrgStructure.dll",
-        "nexus.orgstructure.0.1.0.1405080909-mahdi.nupkg.sha512",
+        "nexus.orgstructure.0.1.0.1405081201-mahdi.nupkg.sha512",
         "nexus.orgstructure.nuspec"
       ]
     },
-    "Nexus.OrgStructure.Infrastructure/0.1.0.1405080909-mahdi": {
-      "sha512": "xuDz0SI3V7KXrZ62XubTfy12Goeci/dzuKO7i/4LAzu1WbOJgqNAZ0rqyS2f0EgMWphZjYzZWtEaOqTLGX4SJQ==",
+    "Nexus.OrgStructure.Infrastructure/0.1.0.1405081201-mahdi": {
+      "sha512": "L6m0BZhWRbGysxYRbgfOnWGlStnXBrMUX6diZUzp/0bjO7D+BgvMXUWDhG9ED/ChhzYPUCrRrXwad1BoXAQ23g==",
       "type": "package",
-      "path": "nexus.orgstructure.infrastructure/0.1.0.1405080909-mahdi",
+      "path": "nexus.orgstructure.infrastructure/0.1.0.1405081201-mahdi",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/Nexus.OrgStructure.Infrastructure.dll",
         "lib/net8.0/Nexus.OrgStructure.Infrastructure.runtimeconfig.json",
-        "nexus.orgstructure.infrastructure.0.1.0.1405080909-mahdi.nupkg.sha512",
+        "nexus.orgstructure.infrastructure.0.1.0.1405081201-mahdi.nupkg.sha512",
         "nexus.orgstructure.infrastructure.nuspec"
       ]
     },
-    "Nexus.TaskManagement/0.1.0.1405080909-mahdi": {
-      "sha512": "Cimo5mvZ168gLsPDtZQl90iLJtYKUh8NZS1bNihV5o+OD20RzVxja4rFs2eed1KbyDwHIj/ggRixxL4dyq4RAA==",
+    "Nexus.TaskManagement/0.1.0.1405081201-mahdi": {
+      "sha512": "wL9D/pN/a7s3suL0V3e3Y1dv+e8zkl/XjwU+dkyDhJa2PyO4BOCVyX7arXEtQPv/Mxa71YcIcq81qctT6bYrEg==",
       "type": "package",
-      "path": "nexus.taskmanagement/0.1.0.1405080909-mahdi",
+      "path": "nexus.taskmanagement/0.1.0.1405081201-mahdi",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/Nexus.TaskManagement.dll",
-        "nexus.taskmanagement.0.1.0.1405080909-mahdi.nupkg.sha512",
+        "nexus.taskmanagement.0.1.0.1405081201-mahdi.nupkg.sha512",
         "nexus.taskmanagement.nuspec"
       ]
     },
-    "Nexus.TaskManagement.Infrastructure/0.1.0.1405080909-mahdi": {
-      "sha512": "m1NSYrX3KC3/YS3m9XGurU8YgQC8jADhoujFN/POxA8h56nKZ5R7IWDO1TqLawRWVo0NUAyvVpdgjpFBo+PWLg==",
+    "Nexus.TaskManagement.Infrastructure/0.1.0.1405081201-mahdi": {
+      "sha512": "dhybwdWd8adpeChy+IHpktY0c14BTD1bO8XNcutjUS9Ex/tAyVj0RSN36Gf1eX4pK2JUKVkbEMmixr932ow2mg==",
       "type": "package",
-      "path": "nexus.taskmanagement.infrastructure/0.1.0.1405080909-mahdi",
+      "path": "nexus.taskmanagement.infrastructure/0.1.0.1405081201-mahdi",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/Nexus.TaskManagement.Infrastructure.dll",
         "lib/net8.0/Nexus.TaskManagement.Infrastructure.runtimeconfig.json",
-        "nexus.taskmanagement.infrastructure.0.1.0.1405080909-mahdi.nupkg.sha512",
+        "nexus.taskmanagement.infrastructure.0.1.0.1405081201-mahdi.nupkg.sha512",
         "nexus.taskmanagement.infrastructure.nuspec"
       ]
     },
-    "NexusCore.Application/0.1.0.1405080909-mahdi": {
-      "sha512": "68tNU5sDUXyAJ4ebH0S8PDzeXX9O/C9pbTYJpwkS8k26y8s82uXEWGs2n5QRV/b5jIA8JTgExcDW4Gzkm6k63g==",
+    "NexusCore.Application/0.1.0.1405081201-mahdi": {
+      "sha512": "tOqxKvRNlNOUjTbaCWPKuI/hhlRdLbau6i5rxpFiXmS2I4I1pik5aJ5VeLx2Vqc9yp3EKpu3G79hjhLwEHTOsQ==",
       "type": "package",
-      "path": "nexuscore.application/0.1.0.1405080909-mahdi",
+      "path": "nexuscore.application/0.1.0.1405081201-mahdi",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/NexusCore.Application.dll",
-        "nexuscore.application.0.1.0.1405080909-mahdi.nupkg.sha512",
+        "nexuscore.application.0.1.0.1405081201-mahdi.nupkg.sha512",
         "nexuscore.application.nuspec"
       ]
     },
-    "NexusCore.Domain/0.1.0.1405080909-mahdi": {
-      "sha512": "s/JyK9LcLljBwIlLubnEMH8LDWKbDaisbbkB177bsW1lslfuDnl/xUzoF1vUBCjdLkUmbKysqpO8+gdOU1jRyA==",
+    "NexusCore.Domain/0.1.0.1405081201-mahdi": {
+      "sha512": "ZgnNWyDvgDWCEqPLLvmsZtbQt2a3Wp5T5tLrEb1oC5jqQXe61rguSmvYgltxkuT0Qr1K0rSLkES8vVHfVDRmBw==",
       "type": "package",
-      "path": "nexuscore.domain/0.1.0.1405080909-mahdi",
+      "path": "nexuscore.domain/0.1.0.1405081201-mahdi",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/NexusCore.Domain.dll",
-        "nexuscore.domain.0.1.0.1405080909-mahdi.nupkg.sha512",
+        "nexuscore.domain.0.1.0.1405081201-mahdi.nupkg.sha512",
         "nexuscore.domain.nuspec"
       ]
     },
-    "NexusCore.Infrastructure/0.1.0.1405080909-mahdi": {
-      "sha512": "Mv8H91GT1lDN2klPwVYmX87f7QhW5P2X8ph5w1Y9R4gmF6TcvEOd4clCXFkUyNg5ZcV+XvRLj4AvGMOquV9T4w==",
+    "NexusCore.Infrastructure/0.1.0.1405081201-mahdi": {
+      "sha512": "gwQVbRheA5TJxAmju3ttLDC70CxsyrIVWH3+tTNBi+w6oJzDqIv9k5KUECZewsNnwmk6Ma0FGZohKPdnRu7Law==",
       "type": "package",
-      "path": "nexuscore.infrastructure/0.1.0.1405080909-mahdi",
+      "path": "nexuscore.infrastructure/0.1.0.1405081201-mahdi",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/NexusCore.Infrastructure.dll",
         "lib/net8.0/NexusCore.Infrastructure.runtimeconfig.json",
-        "nexuscore.infrastructure.0.1.0.1405080909-mahdi.nupkg.sha512",
+        "nexuscore.infrastructure.0.1.0.1405081201-mahdi.nupkg.sha512",
         "nexuscore.infrastructure.nuspec"
       ]
     },
-    "NexusCore.SharedKernel/0.1.0.1405080909-mahdi": {
-      "sha512": "8sqWO8uawNO5VGdmAbkNK7YftwMsgcb2Y5Lf9NfdWpVYJtnulzJlJeh3elNayYnnfcm3/gMDKoNqRzzKf4A1Rg==",
+    "NexusCore.SharedKernel/0.1.0.1405081201-mahdi": {
+      "sha512": "c9dN2sXax+XXet9Jbv7hGNKhgcELT8wz9H9O2N2CDUlSeUXLOCO8+FUFZgmgM9LhmwaiElcrXed966MwwqP75w==",
       "type": "package",
-      "path": "nexuscore.sharedkernel/0.1.0.1405080909-mahdi",
+      "path": "nexuscore.sharedkernel/0.1.0.1405081201-mahdi",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/NexusCore.SharedKernel.dll",
-        "nexuscore.sharedkernel.0.1.0.1405080909-mahdi.nupkg.sha512",
+        "nexuscore.sharedkernel.0.1.0.1405081201-mahdi.nupkg.sha512",
         "nexuscore.sharedkernel.nuspec"
       ]
     },
-    "Notifications.Api/0.1.0.1405080909-mahdi": {
-      "sha512": "rJyRwMNMSa1xs8ChRJlgVZRPDXQ2xuZDHPnnvYo0ohUzSFnVIdu2VdlKnC1kdMIEL0JXwKHE+eParHYlQvMRqg==",
+    "Notifications.Api/0.1.0.1405081201-mahdi": {
+      "sha512": "laIS9B3lFdmDlSWPb4KZYrvZO7zBlOk7MOQhl3A1OqskQ9CAY2YzNBkD8vcQwv4+5wp46Hz1WIDfp3TeZ/A6aQ==",
       "type": "package",
-      "path": "notifications.api/0.1.0.1405080909-mahdi",
+      "path": "notifications.api/0.1.0.1405081201-mahdi",
       "files": [
         ".nupkg.metadata",
         "content/appsettings.json",
         "contentFiles/any/net8.0/appsettings.json",
         "lib/net8.0/Notifications.Api.dll",
         "lib/net8.0/Notifications.Api.runtimeconfig.json",
-        "notifications.api.0.1.0.1405080909-mahdi.nupkg.sha512",
+        "notifications.api.0.1.0.1405081201-mahdi.nupkg.sha512",
         "notifications.api.nuspec"
       ]
     },
-    "Notifications.Application/0.1.0.1405080909-mahdi": {
-      "sha512": "U6VgMvSXyS8uGavkVG61fPhI+xxRbsKDMZ29B7q5/Iy6Sds9WkT96k3R4Ekljso1Eq0Msubm8Mdy2vBe1x3TkA==",
+    "Notifications.Application/0.1.0.1405081201-mahdi": {
+      "sha512": "4wptARYR7LuCaf21P19waxLoEepa2YHWVGf6G4icmBhY4pkx6XPn2OEE6n6r0x8luGXL4xlrBzPsADt5dEWjuA==",
       "type": "package",
-      "path": "notifications.application/0.1.0.1405080909-mahdi",
+      "path": "notifications.application/0.1.0.1405081201-mahdi",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/Notifications.Application.dll",
-        "notifications.application.0.1.0.1405080909-mahdi.nupkg.sha512",
+        "notifications.application.0.1.0.1405081201-mahdi.nupkg.sha512",
         "notifications.application.nuspec"
       ]
     },
-    "Notifications.Domain/0.1.0.1405080909-mahdi": {
-      "sha512": "AF13e9DulANbXtA+qSdw+Zd0itBcdU8DcL5hfKSd9jKOQ2SWHk7IhMtVR44p3xkvQg4myfMg1Gkb7XtdiR0Vqw==",
+    "Notifications.Domain/0.1.0.1405081201-mahdi": {
+      "sha512": "xxi05DqA9IR43ovKHeaRawUEtNbXF0G6f8YA+UYZkcDWVHw99lhKcmdpdtNupQTxTf8Fi2cdFkiOQLK76gcgWg==",
       "type": "package",
-      "path": "notifications.domain/0.1.0.1405080909-mahdi",
+      "path": "notifications.domain/0.1.0.1405081201-mahdi",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/Notifications.Domain.dll",
-        "notifications.domain.0.1.0.1405080909-mahdi.nupkg.sha512",
+        "notifications.domain.0.1.0.1405081201-mahdi.nupkg.sha512",
         "notifications.domain.nuspec"
       ]
     },
-    "Notifications.Infrastructure/0.1.0.1405080909-mahdi": {
-      "sha512": "NQ/kFZBv0SMx6rKjvJDTtelrJc7acYg+sP/3Rjht+XIulp+2R2XpBcbhF6RVHibi59/K6sPgJ1rIYXkKIgyD1w==",
+    "Notifications.Infrastructure/0.1.0.1405081201-mahdi": {
+      "sha512": "TEQu6IGdyAxsd37aelpUuDA42Kq4f9lSsvMOcqIycy7gS6mpp7NmHTFeFzMipDi/LnFegeaqH61b2t+TrdrrRg==",
       "type": "package",
-      "path": "notifications.infrastructure/0.1.0.1405080909-mahdi",
+      "path": "notifications.infrastructure/0.1.0.1405081201-mahdi",
       "files": [
         ".nupkg.metadata",
         "lib/net8.0/Notifications.Infrastructure.dll",
-        "notifications.infrastructure.0.1.0.1405080909-mahdi.nupkg.sha512",
+        "notifications.infrastructure.0.1.0.1405081201-mahdi.nupkg.sha512",
         "notifications.infrastructure.nuspec"
       ]
     },
@@ -5706,23 +5706,23 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Chat.Api >= 0.1.0.1405080909-mahdi",
+      "Chat.Api >= 0.1.0.1405081201-mahdi",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.0",
-      "Nexus.Calendar >= 0.1.0.1405080909-mahdi",
-      "Nexus.Calendar.Infrastructure >= 0.1.0.1405080909-mahdi",
-      "Nexus.Integrations.CalendarOrgStructure >= 0.1.0.1405080909-mahdi",
-      "Nexus.Integrations.CalendarTasks >= 0.1.0.1405080909-mahdi",
-      "Nexus.Integrations.TaskNotifications >= 0.1.0.1405080909-mahdi",
-      "Nexus.Integrations.TaskReporting >= 0.1.0.1405080909-mahdi",
-      "Nexus.OrgStructure >= 0.1.0.1405080909-mahdi",
-      "Nexus.OrgStructure.Infrastructure >= 0.1.0.1405080909-mahdi",
-      "Nexus.Organization >= 0.1.0.1405080909-mahdi",
-      "Nexus.Organization.Infrastructure >= 0.1.0.1405080909-mahdi",
-      "Nexus.TaskManagement >= 0.1.0.1405080909-mahdi",
-      "Nexus.TaskManagement.Infrastructure >= 0.1.0.1405080909-mahdi",
-      "NexusCore.Infrastructure >= 0.1.0.1405080909-mahdi",
-      "Notifications.Api >= 0.1.0.1405080909-mahdi",
-      "Notifications.Infrastructure >= 0.1.0.1405080909-mahdi",
+      "Nexus.Calendar >= 0.1.0.1405081201-mahdi",
+      "Nexus.Calendar.Infrastructure >= 0.1.0.1405081201-mahdi",
+      "Nexus.Integrations.CalendarOrgStructure >= 0.1.0.1405081201-mahdi",
+      "Nexus.Integrations.CalendarTasks >= 0.1.0.1405081201-mahdi",
+      "Nexus.Integrations.TaskNotifications >= 0.1.0.1405081201-mahdi",
+      "Nexus.Integrations.TaskReporting >= 0.1.0.1405081201-mahdi",
+      "Nexus.OrgStructure >= 0.1.0.1405081201-mahdi",
+      "Nexus.OrgStructure.Infrastructure >= 0.1.0.1405081201-mahdi",
+      "Nexus.Organization >= 0.1.0.1405081201-mahdi",
+      "Nexus.Organization.Infrastructure >= 0.1.0.1405081201-mahdi",
+      "Nexus.TaskManagement >= 0.1.0.1405081201-mahdi",
+      "Nexus.TaskManagement.Infrastructure >= 0.1.0.1405081201-mahdi",
+      "NexusCore.Infrastructure >= 0.1.0.1405081201-mahdi",
+      "Notifications.Api >= 0.1.0.1405081201-mahdi",
+      "Notifications.Infrastructure >= 0.1.0.1405081201-mahdi",
       "Serilog >= 4.4.0",
       "Serilog.AspNetCore >= 8.0.0",
       "Serilog.Extensions.Hosting >= 8.0.0",
@@ -5777,7 +5777,7 @@
         "dependencies": {
           "Chat.Api": {
             "target": "Package",
-            "version": "[0.1.0.1405080909-mahdi, )"
+            "version": "[0.1.0.1405081201-mahdi, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -5787,63 +5787,63 @@
           },
           "Nexus.Calendar": {
             "target": "Package",
-            "version": "[0.1.0.1405080909-mahdi, )"
+            "version": "[0.1.0.1405081201-mahdi, )"
           },
           "Nexus.Calendar.Infrastructure": {
             "target": "Package",
-            "version": "[0.1.0.1405080909-mahdi, )"
+            "version": "[0.1.0.1405081201-mahdi, )"
           },
           "Nexus.Integrations.CalendarOrgStructure": {
             "target": "Package",
-            "version": "[0.1.0.1405080909-mahdi, )"
+            "version": "[0.1.0.1405081201-mahdi, )"
           },
           "Nexus.Integrations.CalendarTasks": {
             "target": "Package",
-            "version": "[0.1.0.1405080909-mahdi, )"
+            "version": "[0.1.0.1405081201-mahdi, )"
           },
           "Nexus.Integrations.TaskNotifications": {
             "target": "Package",
-            "version": "[0.1.0.1405080909-mahdi, )"
+            "version": "[0.1.0.1405081201-mahdi, )"
           },
           "Nexus.Integrations.TaskReporting": {
             "target": "Package",
-            "version": "[0.1.0.1405080909-mahdi, )"
+            "version": "[0.1.0.1405081201-mahdi, )"
           },
           "Nexus.OrgStructure": {
             "target": "Package",
-            "version": "[0.1.0.1405080909-mahdi, )"
+            "version": "[0.1.0.1405081201-mahdi, )"
           },
           "Nexus.OrgStructure.Infrastructure": {
             "target": "Package",
-            "version": "[0.1.0.1405080909-mahdi, )"
+            "version": "[0.1.0.1405081201-mahdi, )"
           },
           "Nexus.Organization": {
             "target": "Package",
-            "version": "[0.1.0.1405080909-mahdi, )"
+            "version": "[0.1.0.1405081201-mahdi, )"
           },
           "Nexus.Organization.Infrastructure": {
             "target": "Package",
-            "version": "[0.1.0.1405080909-mahdi, )"
+            "version": "[0.1.0.1405081201-mahdi, )"
           },
           "Nexus.TaskManagement": {
             "target": "Package",
-            "version": "[0.1.0.1405080909-mahdi, )"
+            "version": "[0.1.0.1405081201-mahdi, )"
           },
           "Nexus.TaskManagement.Infrastructure": {
             "target": "Package",
-            "version": "[0.1.0.1405080909-mahdi, )"
+            "version": "[0.1.0.1405081201-mahdi, )"
           },
           "NexusCore.Infrastructure": {
             "target": "Package",
-            "version": "[0.1.0.1405080909-mahdi, )"
+            "version": "[0.1.0.1405081201-mahdi, )"
           },
           "Notifications.Api": {
             "target": "Package",
-            "version": "[0.1.0.1405080909-mahdi, )"
+            "version": "[0.1.0.1405081201-mahdi, )"
           },
           "Notifications.Infrastructure": {
             "target": "Package",
-            "version": "[0.1.0.1405080909-mahdi, )"
+            "version": "[0.1.0.1405081201-mahdi, )"
           },
           "Serilog": {
             "target": "Package",
